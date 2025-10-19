@@ -52,7 +52,7 @@ pub struct ProcessInfo {
 impl Default for SystemSnapshot {
     fn default() -> Self {
         Self {
-            timestamp: Utc::now().timestamp(),
+            timestamp: Utc::now().timestamp_millis(),
             hostname: None,
             uptime_seconds: 0,
             cpu_usage_pct: 0.0,
@@ -107,7 +107,7 @@ pub fn collect_snapshot(previous: Option<SystemSnapshot>, interval: Duration) ->
             DiskUsage {
                 name: disk.name().to_string_lossy().to_string(),
                 mount_point: disk.mount_point().to_string_lossy().to_string(),
-                filesystem: String::from_utf8_lossy(disk.file_system()).into_owned(),
+                filesystem: disk.file_system().to_string_lossy().into_owned(),
                 total_gb,
                 used_gb,
                 used_pct,
@@ -175,7 +175,7 @@ pub fn collect_snapshot(previous: Option<SystemSnapshot>, interval: Duration) ->
     top_processes.truncate(10);
 
     SystemSnapshot {
-        timestamp: Utc::now().timestamp(),
+        timestamp: Utc::now().timestamp_millis(),
         hostname: System::host_name(),
         uptime_seconds: System::uptime(),
         cpu_usage_pct,

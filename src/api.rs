@@ -1,4 +1,4 @@
-use std::sync::Arc;
+use std::{sync::Arc, collections::HashMap};
 
 use axum::{
     extract::{Query, State},
@@ -48,26 +48,29 @@ impl From<AuthError> for ApiError {
     }
 }
 
-#[derive(Debug, Deserialize)]
-pub struct HistoryQuery {
-    pub limit: Option<usize>,
-}
-
 pub async fn system(
     State(state): State<SharedState>,
     headers: HeaderMap,
+    Query(query): Query<HashMap<String, String>>,
 ) -> Result<Json<SystemSnapshot>, ApiError> {
-    authorise(&state, &headers)?;
+    authorise_with_query(&state, &headers, &query)?;
     let snapshot = state.latest_snapshot().await;
     Ok(Json(snapshot))
+}
+
+#[derive(Debug, Deserialize)]
+pub struct SystemQuery {
+    pub limit: Option<usize>,
+    #[serde(flatten)]
+    pub auth_params: HashMap<String, String>,
 }
 
 pub async fn history(
     State(state): State<SharedState>,
     headers: HeaderMap,
-    Query(query): Query<HistoryQuery>,
+    Query(query): Query<SystemQuery>,
 ) -> Result<Json<Vec<SystemSnapshot>>, ApiError> {
-    authorise(&state, &headers)?;
+    authorise_with_query(&state, &headers, &query.auth_params)?;
 
     let max = state.config().history_limit();
     let limit = query.limit.unwrap_or(max).min(max);
@@ -78,35 +81,68 @@ pub async fn history(
 pub async fn apps(
     State(state): State<SharedState>,
     headers: HeaderMap,
+    Query(query): Query<HashMap<String, String>>,
 ) -> Result<Json<serde_json::Value>, ApiError> {
-    authorise(&state, &headers)?;
+    authorise_with_query(&state, &headers, &query)?;
     Ok(Json(json!({ "apps": [] })))
 }
 
 pub async fn tasks(
     State(state): State<SharedState>,
     headers: HeaderMap,
+    Query(query): Query<HashMap<String, String>>,
 ) -> Result<Json<serde_json::Value>, ApiError> {
-    authorise(&state, &headers)?;
+    authorise_with_query(&state, &headers, &query)?;
     Ok(Json(json!({ "tasks": [] })))
 }
 
 pub async fn webtest(
     State(state): State<SharedState>,
     headers: HeaderMap,
+    Query(query): Query<HashMap<String, String>>,
 ) -> Result<Json<serde_json::Value>, ApiError> {
-    authorise(&state, &headers)?;
+    authorise_with_query(&state, &headers, &query)?;
     Ok(Json(json!({ "tests": [] })))
 }
 
 pub async fn alerts(
     State(state): State<SharedState>,
     headers: HeaderMap,
+    Query(query): Query<HashMap<String, String>>,
 ) -> Result<Json<serde_json::Value>, ApiError> {
-    authorise(&state, &headers)?;
+    authorise_with_query(&state, &headers, &query)?;
     Ok(Json(json!({ "alerts": [] })))
+}
+
+pub async fn snapshot_file(
+    State(state): State<SharedState>,
+    headers: HeaderMap,
+    Query(query): Query<HashMap<String, String>>,
+) -> Result<Json<serde_json::Value>, ApiError> {
+    authorise_with_query(&state, &headers, &query)?;
+    
+    // JSON dosyasını oku ve döndür
+    let file_path = state.config().snapshot_dir().join("system_snapshot.json");
+    
+    match tokio::fs::read_to_string(&file_path).await {
+        Ok(content) => {
+            match serde_json::from_str::<serde_json::Value>(&content) {
+                Ok(json_data) => Ok(Json(json_data)),
+                Err(_) => Ok(Json(json!({ "snapshots": [] }))),
+            }
+        }
+        Err(_) => Ok(Json(json!({ "snapshots": [] }))),
+    }
 }
 
 fn authorise(state: &Arc<AppState>, headers: &HeaderMap) -> Result<(), ApiError> {
     auth::ensure_authorized(headers, state.config()).map_err(ApiError::from)
+}
+
+fn authorise_with_query(
+    state: &Arc<AppState>, 
+    headers: &HeaderMap, 
+    query: &HashMap<String, String>
+) -> Result<(), ApiError> {
+    auth::ensure_authorized_with_query(headers, query, state.config()).map_err(ApiError::from)
 }

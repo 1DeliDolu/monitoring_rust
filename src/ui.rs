@@ -132,7 +132,7 @@ pub async fn show_ui(State(state): State<SharedState>) -> Html<String> {
         mem_total = snapshot.mem_total_mb,
         mem_available = snapshot.mem_available_mb,
         uptime = format_duration(snapshot.uptime_seconds),
-        timestamp = chrono::DateTime::from_timestamp(snapshot.timestamp, 0)
+        timestamp = chrono::DateTime::from_timestamp_millis(snapshot.timestamp)
             .map(|dt| dt.format("%Y-%m-%d %H:%M:%S").to_string())
             .unwrap_or_else(|| snapshot.timestamp.to_string()),
         disks = disks,

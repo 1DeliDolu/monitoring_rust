@@ -50,6 +50,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let app = Router::new()
         .route("/api/system", get(api::system))
         .route("/api/history", get(api::history))
+        .route("/api/snapshots", get(api::snapshot_file))
         .route("/api/apps", get(api::apps))
         .route("/api/tasks", get(api::tasks))
         .route("/api/webtest", get(api::webtest))
