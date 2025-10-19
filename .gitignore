@@ -22,3 +22,5 @@ target
 
 
 .env
+
+system_snapshot.json
