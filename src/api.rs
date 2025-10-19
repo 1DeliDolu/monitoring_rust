@@ -47,6 +47,8 @@ pub async fn system(
 #[derive(Debug, Deserialize)]
 pub struct SystemQuery {
     pub limit: Option<usize>,
+    pub from: Option<i64>,
+    pub to: Option<i64>,
     #[serde(flatten)]
     pub auth_params: HashMap<String, String>,
 }
@@ -60,7 +62,16 @@ pub async fn history(
 
     let max = state.config().history_limit();
     let limit = query.limit.unwrap_or(max).min(max);
-    let snapshots = state.history(limit).await;
+    let mut snapshots = state.history(limit).await;
+    
+    // Zaman aralığına göre filtrele
+    if let Some(from) = query.from {
+        snapshots.retain(|s| s.timestamp >= from);
+    }
+    if let Some(to) = query.to {
+        snapshots.retain(|s| s.timestamp <= to);
+    }
+    
     Ok(Json(snapshots))
 }
 

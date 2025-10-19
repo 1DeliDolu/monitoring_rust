@@ -95,6 +95,15 @@ pub fn collect_snapshot(previous: Option<SystemSnapshot>, interval: Duration) ->
 
     let disk_usage: Vec<DiskUsage> = disks
         .iter()
+        .filter(|disk| {
+            let mount_point = disk.mount_point().to_string_lossy().to_string();
+            
+            // Sadece ana mount point'leri tut (whitelist yaklaşımı)
+            mount_point == "/" 
+                || mount_point == "/home" 
+                || mount_point == "/mnt/c"
+                || mount_point == "/mnt/d"
+        })
         .map(|disk| {
             let total_gb = bytes_to_gb(disk.total_space());
             let available_gb = bytes_to_gb(disk.available_space());
