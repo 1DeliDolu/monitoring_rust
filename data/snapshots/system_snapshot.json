@@ -1,372 +1,6 @@
 {
   "snapshots": [
     {
-      "timestamp": 1760892035444,
-      "hostname": "Musta",
-      "uptime_seconds": 16342,
-      "cpu_usage_pct": 3.6764707565307617,
-      "load_avg_one": 0.3,
-      "load_avg_five": 0.4,
-      "load_avg_fifteen": 0.28,
-      "mem_used_mb": 2506308,
-      "mem_total_mb": 16225484,
-      "mem_available_mb": 13719176,
-      "disks": [
-        {
-          "name": "none",
-          "mount_point": "/usr/lib/modules/6.6.87.2-microsoft-standard-WSL2",
-          "filesystem": "overlay",
-          "total_gb": 7.736911773681641,
-          "used_gb": 0.0,
-          "used_pct": 0.0
-        },
-        {
-          "name": "drivers",
-          "mount_point": "/usr/lib/wsl/drivers",
-          "filesystem": "9p",
-          "total_gb": 231.8925743103027,
-          "used_gb": 143.0059356689453,
-          "used_pct": 61.66904485591013
-        },
-        {
-          "name": "/dev/sdf",
-          "mount_point": "/",
-          "filesystem": "ext4",
-          "total_gb": 1006.853931427002,
-          "used_gb": 66.68838882446289,
-          "used_pct": 6.623442263362496
-        },
-        {
-          "name": "/dev/sdf",
-          "mount_point": "/mnt/wslg/distro",
-          "filesystem": "ext4",
-          "total_gb": 1006.853931427002,
-          "used_gb": 66.68838882446289,
-          "used_pct": 6.623442263362496
-        },
-        {
-          "name": "none",
-          "mount_point": "/usr/lib/wsl/lib",
-          "filesystem": "overlay",
-          "total_gb": 7.736911773681641,
-          "used_gb": 0.0,
-          "used_pct": 0.0
-        },
-        {
-          "name": "none",
-          "mount_point": "/mnt/wslg/versions.txt",
-          "filesystem": "overlay",
-          "total_gb": 7.736911773681641,
-          "used_gb": 0.000072479248046875,
-          "used_pct": 0.0009367981717644102
-        },
-        {
-          "name": "none",
-          "mount_point": "/mnt/wslg/doc",
-          "filesystem": "overlay",
-          "total_gb": 7.736911773681641,
-          "used_gb": 0.000072479248046875,
-          "used_pct": 0.0009367981717644102
-        },
-        {
-          "name": "C:\\134",
-          "mount_point": "/mnt/c",
-          "filesystem": "9p",
-          "total_gb": 231.8925743103027,
-          "used_gb": 143.0059356689453,
-          "used_pct": 61.66904485591013
-        },
-        {
-          "name": "D:\\134",
-          "mount_point": "/mnt/d",
-          "filesystem": "9p",
-          "total_gb": 244.1396446228027,
-          "used_gb": 6.662925720214844,
-          "used_pct": 2.7291453342242327
-        },
-        {
-          "name": "/dev/sdd",
-          "mount_point": "/mnt/wsl/docker-desktop/docker-desktop-user-distro",
-          "filesystem": "ext4",
-          "total_gb": 1006.853931427002,
-          "used_gb": 51.27254104614258,
-          "used_pct": 5.092351476790146
-        },
-        {
-          "name": "/dev/sdf",
-          "mount_point": "/snap",
-          "filesystem": "ext4",
-          "total_gb": 1006.853931427002,
-          "used_gb": 66.68838882446289,
-          "used_pct": 6.623442263362496
-        },
-        {
-          "name": "snapfuse",
-          "mount_point": "/snap/bare/5",
-          "filesystem": "fuse.snapfuse",
-          "total_gb": 0.0001220703125,
-          "used_gb": 0.0001220703125,
-          "used_pct": 100.0
-        },
-        {
-          "name": "snapfuse",
-          "mount_point": "/snap/core22/2133",
-          "filesystem": "fuse.snapfuse",
-          "total_gb": 0.072265625,
-          "used_gb": 0.072265625,
-          "used_pct": 100.0
-        },
-        {
-          "name": "snapfuse",
-          "mount_point": "/snap/firefox/7024",
-          "filesystem": "fuse.snapfuse",
-          "total_gb": 0.2430419921875,
-          "used_gb": 0.2430419921875,
-          "used_pct": 100.0
-        },
-        {
-          "name": "snapfuse",
-          "mount_point": "/snap/firefox/7084",
-          "filesystem": "fuse.snapfuse",
-          "total_gb": 0.243408203125,
-          "used_gb": 0.243408203125,
-          "used_pct": 100.0
-        },
-        {
-          "name": "snapfuse",
-          "mount_point": "/snap/gnome-42-2204/226",
-          "filesystem": "fuse.snapfuse",
-          "total_gb": 0.504150390625,
-          "used_gb": 0.504150390625,
-          "used_pct": 100.0
-        },
-        {
-          "name": "snapfuse",
-          "mount_point": "/snap/gtk-common-themes/1535",
-          "filesystem": "fuse.snapfuse",
-          "total_gb": 0.089599609375,
-          "used_gb": 0.089599609375,
-          "used_pct": 100.0
-        },
-        {
-          "name": "snapfuse",
-          "mount_point": "/snap/snapd/25202",
-          "filesystem": "fuse.snapfuse",
-          "total_gb": 0.0496826171875,
-          "used_gb": 0.0496826171875,
-          "used_pct": 100.0
-        },
-        {
-          "name": "snapfuse",
-          "mount_point": "/snap/tree/54",
-          "filesystem": "fuse.snapfuse",
-          "total_gb": 0.00439453125,
-          "used_gb": 0.00439453125,
-          "used_pct": 100.0
-        },
-        {
-          "name": "/dev/sdf",
-          "mount_point": "/mnt/wsl/docker-desktop-bind-mounts/Ubuntu/3511c49d805e92dae5dc9586833240a162e8ca025e988219e79932e68b99d1ed",
-          "filesystem": "ext4",
-          "total_gb": 1006.853931427002,
-          "used_gb": 66.68838882446289,
-          "used_pct": 6.623442263362496
-        },
-        {
-          "name": "D:\\134",
-          "mount_point": "/mnt/wsl/docker-desktop-bind-mounts/Ubuntu/9cdbca3afa958bf086bb7dda0ee0cd87e2bf251bd05afae045819a2fe90f9890",
-          "filesystem": "9p",
-          "total_gb": 244.1396446228027,
-          "used_gb": 6.662925720214844,
-          "used_pct": 2.7291453342242327
-        },
-        {
-          "name": "C:\\134Program\\040Files\\134Docker\\134Docker\\134resources",
-          "mount_point": "/Docker/host",
-          "filesystem": "9p",
-          "total_gb": 231.8925743103027,
-          "used_gb": 143.0059356689453,
-          "used_pct": 61.66904485591013
-        },
-        {
-          "name": "D:\\134",
-          "mount_point": "/mnt/wsl/docker-desktop-bind-mounts/Ubuntu/89a509f4875f520c757057afb7316a49e360512dcabfdc449e359f62d8eb9c2d",
-          "filesystem": "9p",
-          "total_gb": 244.1396446228027,
-          "used_gb": 6.662925720214844,
-          "used_pct": 2.7291453342242327
-        },
-        {
-          "name": "D:\\134",
-          "mount_point": "/mnt/wsl/docker-desktop-bind-mounts/Ubuntu/088f0b5a1207fafdbaee1812e1b5a9083accce1f0e9b41b741e1cd1971066b71",
-          "filesystem": "9p",
-          "total_gb": 244.1396446228027,
-          "used_gb": 6.662925720214844,
-          "used_pct": 2.7291453342242327
-        },
-        {
-          "name": "D:\\134",
-          "mount_point": "/mnt/wsl/docker-desktop-bind-mounts/Ubuntu/c57a545dd2e1e62a6af1954ba4a922d957a4303828bde247a2d5ff54826b25ff",
-          "filesystem": "9p",
-          "total_gb": 244.1396446228027,
-          "used_gb": 6.662925720214844,
-          "used_pct": 2.7291453342242327
-        },
-        {
-          "name": "D:\\134",
-          "mount_point": "/mnt/wsl/docker-desktop-bind-mounts/Ubuntu/28b9f53544143f8f48f23b7aeaf17b2c5264ed3de266536420d641aa56e20e01",
-          "filesystem": "9p",
-          "total_gb": 244.1396446228027,
-          "used_gb": 6.662925720214844,
-          "used_pct": 2.7291453342242327
-        },
-        {
-          "name": "D:\\134",
-          "mount_point": "/mnt/wsl/docker-desktop-bind-mounts/Ubuntu/c9be62beeccb8e9c36f48f79721393cbc9c375dcfde33d6823945c028223ac7f",
-          "filesystem": "9p",
-          "total_gb": 244.1396446228027,
-          "used_gb": 6.662925720214844,
-          "used_pct": 2.7291453342242327
-        },
-        {
-          "name": "D:\\134",
-          "mount_point": "/mnt/wsl/docker-desktop-bind-mounts/Ubuntu/d94279991f5fc7bf85edf67e83d635dd9a421e7718426c93ef2e24d54f84c1c2",
-          "filesystem": "9p",
-          "total_gb": 244.1396446228027,
-          "used_gb": 6.662925720214844,
-          "used_pct": 2.7291453342242327
-        },
-        {
-          "name": "D:\\134",
-          "mount_point": "/mnt/wsl/docker-desktop-bind-mounts/Ubuntu/39e7a27ca9f4591800aff85214c95809de15ab2a1ebaa37c6d4481ea34ae9efc",
-          "filesystem": "9p",
-          "total_gb": 244.1396446228027,
-          "used_gb": 6.662925720214844,
-          "used_pct": 2.7291453342242327
-        },
-        {
-          "name": "D:\\134",
-          "mount_point": "/mnt/wsl/docker-desktop-bind-mounts/Ubuntu/eea7088130d666db01629b9b7f89e2bc9afafb2cf108401f988af78863a12059",
-          "filesystem": "9p",
-          "total_gb": 244.1396446228027,
-          "used_gb": 6.662925720214844,
-          "used_pct": 2.7291453342242327
-        },
-        {
-          "name": "D:\\134",
-          "mount_point": "/mnt/wsl/docker-desktop-bind-mounts/Ubuntu/27497507d21d641609f33b4e1bf795e95036d2935b7e572ec06aaad81505a4a1",
-          "filesystem": "9p",
-          "total_gb": 244.1396446228027,
-          "used_gb": 6.662925720214844,
-          "used_pct": 2.7291453342242327
-        },
-        {
-          "name": "D:\\134",
-          "mount_point": "/mnt/wsl/docker-desktop-bind-mounts/Ubuntu/507091392882cb7c1e30ee3ba117b42c3fe6b1b35f357cb74b193cd51ad4f077",
-          "filesystem": "9p",
-          "total_gb": 244.1396446228027,
-          "used_gb": 6.662925720214844,
-          "used_pct": 2.7291453342242327
-        },
-        {
-          "name": "D:\\134",
-          "mount_point": "/mnt/d",
-          "filesystem": "9p",
-          "total_gb": 244.1396446228027,
-          "used_gb": 6.662925720214844,
-          "used_pct": 2.7291453342242327
-        }
-      ],
-      "network": [
-        {
-          "name": "eth0",
-          "received_total_bytes": 76842,
-          "transmitted_total_bytes": 12970,
-          "received_kbps": 0.0,
-          "transmitted_kbps": 0.0
-        },
-        {
-          "name": "lo",
-          "received_total_bytes": 42480104,
-          "transmitted_total_bytes": 42480104,
-          "received_kbps": 0.0,
-          "transmitted_kbps": 0.0
-        }
-      ],
-      "top_processes": [
-        {
-          "pid": 64380,
-          "name": "agent",
-          "cpu_pct": 22.05882453918457,
-          "memory_mb": 36164,
-          "status": "Sleeping"
-        },
-        {
-          "pid": 64412,
-          "name": "tokio-runtime-w",
-          "cpu_pct": 4.411764621734619,
-          "memory_mb": 36164,
-          "status": "Running"
-        },
-        {
-          "pid": 64413,
-          "name": "tokio-runtime-w",
-          "cpu_pct": 4.411764621734619,
-          "memory_mb": 36164,
-          "status": "Running"
-        },
-        {
-          "pid": 64416,
-          "name": "tokio-runtime-w",
-          "cpu_pct": 4.411764621734619,
-          "memory_mb": 36164,
-          "status": "Running"
-        },
-        {
-          "pid": 64417,
-          "name": "tokio-runtime-w",
-          "cpu_pct": 4.411764621734619,
-          "memory_mb": 36164,
-          "status": "Running"
-        },
-        {
-          "pid": 63095,
-          "name": "tokio-runtime-w",
-          "cpu_pct": 0.0,
-          "memory_mb": 22484,
-          "status": "Sleeping"
-        },
-        {
-          "pid": 32463,
-          "name": "Relay(32464)",
-          "cpu_pct": 0.0,
-          "memory_mb": 1164,
-          "status": "Sleeping"
-        },
-        {
-          "pid": 105,
-          "name": "snapfuse",
-          "cpu_pct": 0.0,
-          "memory_mb": 1796,
-          "status": "Sleeping"
-        },
-        {
-          "pid": 275,
-          "name": "agetty",
-          "cpu_pct": 0.0,
-          "memory_mb": 1792,
-          "status": "Sleeping"
-        },
-        {
-          "pid": 62164,
-          "name": "docker-compose",
-          "cpu_pct": 0.0,
-          "memory_mb": 48952,
-          "status": "Sleeping"
-        }
-      ]
-    },
-    {
       "timestamp": 1760892040907,
       "hostname": "Musta",
       "uptime_seconds": 16348,
@@ -105066,7 +104700,7 @@
           "name": "drivers",
           "mount_point": "/usr/lib/wsl/drivers",
           "filesystem": "9p",
-          "total_gb": 231.89257431030273,
+          "total_gb": 231.8925743103027,
           "used_gb": 142.97455215454102,
           "used_pct": 61.65551121236952
         },
@@ -105114,7 +104748,7 @@
           "name": "C:\\134",
           "mount_point": "/mnt/c",
           "filesystem": "9p",
-          "total_gb": 231.89257431030273,
+          "total_gb": 231.8925743103027,
           "used_gb": 142.97455215454102,
           "used_pct": 61.65551121236952
         },
@@ -105122,7 +104756,7 @@
           "name": "D:\\134",
           "mount_point": "/mnt/d",
           "filesystem": "9p",
-          "total_gb": 244.13964462280273,
+          "total_gb": 244.1396446228027,
           "used_gb": 6.6630706787109375,
           "used_pct": 2.7292047094626617
         },
@@ -105218,7 +104852,7 @@
           "name": "D:\\134",
           "mount_point": "/mnt/wsl/docker-desktop-bind-mounts/Ubuntu/9cdbca3afa958bf086bb7dda0ee0cd87e2bf251bd05afae045819a2fe90f9890",
           "filesystem": "9p",
-          "total_gb": 244.13964462280273,
+          "total_gb": 244.1396446228027,
           "used_gb": 6.6630706787109375,
           "used_pct": 2.7292047094626617
         },
@@ -105226,7 +104860,7 @@
           "name": "C:\\134Program\\040Files\\134Docker\\134Docker\\134resources",
           "mount_point": "/Docker/host",
           "filesystem": "9p",
-          "total_gb": 231.89257431030273,
+          "total_gb": 231.8925743103027,
           "used_gb": 142.97455215454102,
           "used_pct": 61.65551121236952
         },
@@ -105234,7 +104868,7 @@
           "name": "D:\\134",
           "mount_point": "/mnt/wsl/docker-desktop-bind-mounts/Ubuntu/89a509f4875f520c757057afb7316a49e360512dcabfdc449e359f62d8eb9c2d",
           "filesystem": "9p",
-          "total_gb": 244.13964462280273,
+          "total_gb": 244.1396446228027,
           "used_gb": 6.6630706787109375,
           "used_pct": 2.7292047094626617
         },
@@ -105242,7 +104876,7 @@
           "name": "D:\\134",
           "mount_point": "/mnt/wsl/docker-desktop-bind-mounts/Ubuntu/088f0b5a1207fafdbaee1812e1b5a9083accce1f0e9b41b741e1cd1971066b71",
           "filesystem": "9p",
-          "total_gb": 244.13964462280273,
+          "total_gb": 244.1396446228027,
           "used_gb": 6.6630706787109375,
           "used_pct": 2.7292047094626617
         },
@@ -105250,7 +104884,7 @@
           "name": "D:\\134",
           "mount_point": "/mnt/wsl/docker-desktop-bind-mounts/Ubuntu/c57a545dd2e1e62a6af1954ba4a922d957a4303828bde247a2d5ff54826b25ff",
           "filesystem": "9p",
-          "total_gb": 244.13964462280273,
+          "total_gb": 244.1396446228027,
           "used_gb": 6.6630706787109375,
           "used_pct": 2.7292047094626617
         },
@@ -105258,7 +104892,7 @@
           "name": "D:\\134",
           "mount_point": "/mnt/wsl/docker-desktop-bind-mounts/Ubuntu/28b9f53544143f8f48f23b7aeaf17b2c5264ed3de266536420d641aa56e20e01",
           "filesystem": "9p",
-          "total_gb": 244.13964462280273,
+          "total_gb": 244.1396446228027,
           "used_gb": 6.6630706787109375,
           "used_pct": 2.7292047094626617
         },
@@ -105266,7 +104900,7 @@
           "name": "D:\\134",
           "mount_point": "/mnt/wsl/docker-desktop-bind-mounts/Ubuntu/c9be62beeccb8e9c36f48f79721393cbc9c375dcfde33d6823945c028223ac7f",
           "filesystem": "9p",
-          "total_gb": 244.13964462280273,
+          "total_gb": 244.1396446228027,
           "used_gb": 6.6630706787109375,
           "used_pct": 2.7292047094626617
         },
@@ -105274,7 +104908,7 @@
           "name": "D:\\134",
           "mount_point": "/mnt/wsl/docker-desktop-bind-mounts/Ubuntu/d94279991f5fc7bf85edf67e83d635dd9a421e7718426c93ef2e24d54f84c1c2",
           "filesystem": "9p",
-          "total_gb": 244.13964462280273,
+          "total_gb": 244.1396446228027,
           "used_gb": 6.6630706787109375,
           "used_pct": 2.7292047094626617
         },
@@ -105282,7 +104916,7 @@
           "name": "D:\\134",
           "mount_point": "/mnt/wsl/docker-desktop-bind-mounts/Ubuntu/39e7a27ca9f4591800aff85214c95809de15ab2a1ebaa37c6d4481ea34ae9efc",
           "filesystem": "9p",
-          "total_gb": 244.13964462280273,
+          "total_gb": 244.1396446228027,
           "used_gb": 6.6630706787109375,
           "used_pct": 2.7292047094626617
         },
@@ -105290,7 +104924,7 @@
           "name": "D:\\134",
           "mount_point": "/mnt/wsl/docker-desktop-bind-mounts/Ubuntu/eea7088130d666db01629b9b7f89e2bc9afafb2cf108401f988af78863a12059",
           "filesystem": "9p",
-          "total_gb": 244.13964462280273,
+          "total_gb": 244.1396446228027,
           "used_gb": 6.6630706787109375,
           "used_pct": 2.7292047094626617
         },
@@ -105298,7 +104932,7 @@
           "name": "D:\\134",
           "mount_point": "/mnt/wsl/docker-desktop-bind-mounts/Ubuntu/27497507d21d641609f33b4e1bf795e95036d2935b7e572ec06aaad81505a4a1",
           "filesystem": "9p",
-          "total_gb": 244.13964462280273,
+          "total_gb": 244.1396446228027,
           "used_gb": 6.6630706787109375,
           "used_pct": 2.7292047094626617
         },
@@ -105306,7 +104940,7 @@
           "name": "D:\\134",
           "mount_point": "/mnt/wsl/docker-desktop-bind-mounts/Ubuntu/507091392882cb7c1e30ee3ba117b42c3fe6b1b35f357cb74b193cd51ad4f077",
           "filesystem": "9p",
-          "total_gb": 244.13964462280273,
+          "total_gb": 244.1396446228027,
           "used_gb": 6.6630706787109375,
           "used_pct": 2.7292047094626617
         },
@@ -105314,7 +104948,7 @@
           "name": "D:\\134",
           "mount_point": "/mnt/d",
           "filesystem": "9p",
-          "total_gb": 244.13964462280273,
+          "total_gb": 244.1396446228027,
           "used_gb": 6.6630706787109375,
           "used_pct": 2.7292047094626617
         }
@@ -105404,6 +105038,372 @@
           "name": "sh",
           "cpu_pct": 0.0,
           "memory_mb": 1536,
+          "status": "Sleeping"
+        }
+      ]
+    },
+    {
+      "timestamp": 1760893659864,
+      "hostname": "Musta",
+      "uptime_seconds": 17911,
+      "cpu_usage_pct": 5.185184955596924,
+      "load_avg_one": 0.86,
+      "load_avg_five": 0.55,
+      "load_avg_fifteen": 0.42,
+      "mem_used_mb": 2616264,
+      "mem_total_mb": 16225484,
+      "mem_available_mb": 13609220,
+      "disks": [
+        {
+          "name": "none",
+          "mount_point": "/usr/lib/modules/6.6.87.2-microsoft-standard-WSL2",
+          "filesystem": "overlay",
+          "total_gb": 7.736911773681641,
+          "used_gb": 0.0,
+          "used_pct": 0.0
+        },
+        {
+          "name": "drivers",
+          "mount_point": "/usr/lib/wsl/drivers",
+          "filesystem": "9p",
+          "total_gb": 231.89257431030273,
+          "used_gb": 142.97482299804688,
+          "used_pct": 61.65562800934185
+        },
+        {
+          "name": "/dev/sdf",
+          "mount_point": "/",
+          "filesystem": "ext4",
+          "total_gb": 1006.853931427002,
+          "used_gb": 66.70065689086914,
+          "used_pct": 6.624660718793152
+        },
+        {
+          "name": "/dev/sdf",
+          "mount_point": "/mnt/wslg/distro",
+          "filesystem": "ext4",
+          "total_gb": 1006.853931427002,
+          "used_gb": 66.70065689086914,
+          "used_pct": 6.624660718793152
+        },
+        {
+          "name": "none",
+          "mount_point": "/usr/lib/wsl/lib",
+          "filesystem": "overlay",
+          "total_gb": 7.736911773681641,
+          "used_gb": 0.0,
+          "used_pct": 0.0
+        },
+        {
+          "name": "none",
+          "mount_point": "/mnt/wslg/versions.txt",
+          "filesystem": "overlay",
+          "total_gb": 7.736911773681641,
+          "used_gb": 0.000072479248046875,
+          "used_pct": 0.0009367981717644102
+        },
+        {
+          "name": "none",
+          "mount_point": "/mnt/wslg/doc",
+          "filesystem": "overlay",
+          "total_gb": 7.736911773681641,
+          "used_gb": 0.000072479248046875,
+          "used_pct": 0.0009367981717644102
+        },
+        {
+          "name": "C:\\134",
+          "mount_point": "/mnt/c",
+          "filesystem": "9p",
+          "total_gb": 231.89257431030273,
+          "used_gb": 142.97482299804688,
+          "used_pct": 61.65562800934185
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.13964462280273,
+          "used_gb": 6.663509368896484,
+          "used_pct": 2.729384397684222
+        },
+        {
+          "name": "/dev/sdd",
+          "mount_point": "/mnt/wsl/docker-desktop/docker-desktop-user-distro",
+          "filesystem": "ext4",
+          "total_gb": 1006.853931427002,
+          "used_gb": 51.27254104614258,
+          "used_pct": 5.092351476790146
+        },
+        {
+          "name": "/dev/sdf",
+          "mount_point": "/snap",
+          "filesystem": "ext4",
+          "total_gb": 1006.853931427002,
+          "used_gb": 66.70065689086914,
+          "used_pct": 6.624660718793152
+        },
+        {
+          "name": "snapfuse",
+          "mount_point": "/snap/bare/5",
+          "filesystem": "fuse.snapfuse",
+          "total_gb": 0.0001220703125,
+          "used_gb": 0.0001220703125,
+          "used_pct": 100.0
+        },
+        {
+          "name": "snapfuse",
+          "mount_point": "/snap/core22/2133",
+          "filesystem": "fuse.snapfuse",
+          "total_gb": 0.072265625,
+          "used_gb": 0.072265625,
+          "used_pct": 100.0
+        },
+        {
+          "name": "snapfuse",
+          "mount_point": "/snap/firefox/7024",
+          "filesystem": "fuse.snapfuse",
+          "total_gb": 0.2430419921875,
+          "used_gb": 0.2430419921875,
+          "used_pct": 100.0
+        },
+        {
+          "name": "snapfuse",
+          "mount_point": "/snap/firefox/7084",
+          "filesystem": "fuse.snapfuse",
+          "total_gb": 0.243408203125,
+          "used_gb": 0.243408203125,
+          "used_pct": 100.0
+        },
+        {
+          "name": "snapfuse",
+          "mount_point": "/snap/gnome-42-2204/226",
+          "filesystem": "fuse.snapfuse",
+          "total_gb": 0.504150390625,
+          "used_gb": 0.504150390625,
+          "used_pct": 100.0
+        },
+        {
+          "name": "snapfuse",
+          "mount_point": "/snap/gtk-common-themes/1535",
+          "filesystem": "fuse.snapfuse",
+          "total_gb": 0.089599609375,
+          "used_gb": 0.089599609375,
+          "used_pct": 100.0
+        },
+        {
+          "name": "snapfuse",
+          "mount_point": "/snap/snapd/25202",
+          "filesystem": "fuse.snapfuse",
+          "total_gb": 0.0496826171875,
+          "used_gb": 0.0496826171875,
+          "used_pct": 100.0
+        },
+        {
+          "name": "snapfuse",
+          "mount_point": "/snap/tree/54",
+          "filesystem": "fuse.snapfuse",
+          "total_gb": 0.00439453125,
+          "used_gb": 0.00439453125,
+          "used_pct": 100.0
+        },
+        {
+          "name": "/dev/sdf",
+          "mount_point": "/mnt/wsl/docker-desktop-bind-mounts/Ubuntu/3511c49d805e92dae5dc9586833240a162e8ca025e988219e79932e68b99d1ed",
+          "filesystem": "ext4",
+          "total_gb": 1006.853931427002,
+          "used_gb": 66.70065689086914,
+          "used_pct": 6.624660718793152
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/wsl/docker-desktop-bind-mounts/Ubuntu/9cdbca3afa958bf086bb7dda0ee0cd87e2bf251bd05afae045819a2fe90f9890",
+          "filesystem": "9p",
+          "total_gb": 244.13964462280273,
+          "used_gb": 6.663509368896484,
+          "used_pct": 2.729384397684222
+        },
+        {
+          "name": "C:\\134Program\\040Files\\134Docker\\134Docker\\134resources",
+          "mount_point": "/Docker/host",
+          "filesystem": "9p",
+          "total_gb": 231.89257431030273,
+          "used_gb": 142.97482299804688,
+          "used_pct": 61.65562800934185
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/wsl/docker-desktop-bind-mounts/Ubuntu/89a509f4875f520c757057afb7316a49e360512dcabfdc449e359f62d8eb9c2d",
+          "filesystem": "9p",
+          "total_gb": 244.13964462280273,
+          "used_gb": 6.663509368896484,
+          "used_pct": 2.729384397684222
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/wsl/docker-desktop-bind-mounts/Ubuntu/088f0b5a1207fafdbaee1812e1b5a9083accce1f0e9b41b741e1cd1971066b71",
+          "filesystem": "9p",
+          "total_gb": 244.13964462280273,
+          "used_gb": 6.663509368896484,
+          "used_pct": 2.729384397684222
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/wsl/docker-desktop-bind-mounts/Ubuntu/c57a545dd2e1e62a6af1954ba4a922d957a4303828bde247a2d5ff54826b25ff",
+          "filesystem": "9p",
+          "total_gb": 244.13964462280273,
+          "used_gb": 6.663509368896484,
+          "used_pct": 2.729384397684222
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/wsl/docker-desktop-bind-mounts/Ubuntu/28b9f53544143f8f48f23b7aeaf17b2c5264ed3de266536420d641aa56e20e01",
+          "filesystem": "9p",
+          "total_gb": 244.13964462280273,
+          "used_gb": 6.663509368896484,
+          "used_pct": 2.729384397684222
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/wsl/docker-desktop-bind-mounts/Ubuntu/c9be62beeccb8e9c36f48f79721393cbc9c375dcfde33d6823945c028223ac7f",
+          "filesystem": "9p",
+          "total_gb": 244.13964462280273,
+          "used_gb": 6.663509368896484,
+          "used_pct": 2.729384397684222
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/wsl/docker-desktop-bind-mounts/Ubuntu/d94279991f5fc7bf85edf67e83d635dd9a421e7718426c93ef2e24d54f84c1c2",
+          "filesystem": "9p",
+          "total_gb": 244.13964462280273,
+          "used_gb": 6.663509368896484,
+          "used_pct": 2.729384397684222
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/wsl/docker-desktop-bind-mounts/Ubuntu/39e7a27ca9f4591800aff85214c95809de15ab2a1ebaa37c6d4481ea34ae9efc",
+          "filesystem": "9p",
+          "total_gb": 244.13964462280273,
+          "used_gb": 6.663509368896484,
+          "used_pct": 2.729384397684222
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/wsl/docker-desktop-bind-mounts/Ubuntu/eea7088130d666db01629b9b7f89e2bc9afafb2cf108401f988af78863a12059",
+          "filesystem": "9p",
+          "total_gb": 244.13964462280273,
+          "used_gb": 6.663509368896484,
+          "used_pct": 2.729384397684222
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/wsl/docker-desktop-bind-mounts/Ubuntu/27497507d21d641609f33b4e1bf795e95036d2935b7e572ec06aaad81505a4a1",
+          "filesystem": "9p",
+          "total_gb": 244.13964462280273,
+          "used_gb": 6.663509368896484,
+          "used_pct": 2.729384397684222
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/wsl/docker-desktop-bind-mounts/Ubuntu/507091392882cb7c1e30ee3ba117b42c3fe6b1b35f357cb74b193cd51ad4f077",
+          "filesystem": "9p",
+          "total_gb": 244.13964462280273,
+          "used_gb": 6.663509368896484,
+          "used_pct": 2.729384397684222
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.13964462280273,
+          "used_gb": 6.663509368896484,
+          "used_pct": 2.729384397684222
+        }
+      ],
+      "network": [
+        {
+          "name": "eth0",
+          "received_total_bytes": 12355265,
+          "transmitted_total_bytes": 11047513,
+          "received_kbps": 163.1328125,
+          "transmitted_kbps": 26.4
+        },
+        {
+          "name": "lo",
+          "received_total_bytes": 46313160,
+          "transmitted_total_bytes": 46313160,
+          "received_kbps": 0.0,
+          "transmitted_kbps": 0.0
+        }
+      ],
+      "top_processes": [
+        {
+          "pid": 64380,
+          "name": "agent",
+          "cpu_pct": 17.77777862548828,
+          "memory_mb": 56004,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 64409,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.44444465637207,
+          "memory_mb": 56004,
+          "status": "Running"
+        },
+        {
+          "pid": 64414,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.44444465637207,
+          "memory_mb": 56004,
+          "status": "Running"
+        },
+        {
+          "pid": 63083,
+          "name": "codex",
+          "cpu_pct": 4.44444465637207,
+          "memory_mb": 30576,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 318,
+          "name": "snapd",
+          "cpu_pct": 0.0,
+          "memory_mb": 38160,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 267,
+          "name": "rsyslogd",
+          "cpu_pct": 0.0,
+          "memory_mb": 4992,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 63097,
+          "name": "tracing-appende",
+          "cpu_pct": 0.0,
+          "memory_mb": 30576,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 62138,
+          "name": "docker",
+          "cpu_pct": 0.0,
+          "memory_mb": 23296,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 32463,
+          "name": "Relay(32464)",
+          "cpu_pct": 0.0,
+          "memory_mb": 1164,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 62244,
+          "name": "SessionLeader",
+          "cpu_pct": 0.0,
+          "memory_mb": 1028,
           "status": "Sleeping"
         }
       ]
