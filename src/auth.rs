@@ -1,44 +1,15 @@
 use axum::http::{header::AUTHORIZATION, HeaderMap};
-use axum::extract::Query;
 use std::collections::HashMap;
 
 use crate::config::Config;
 
 #[derive(Debug, thiserror::Error)]
 pub enum AuthError {
-    #[error("missing Authorization header")]
-    Missing,
-    #[error("invalid Authorization header format")]
-    Invalid,
     #[error("unauthorized")]
     Unauthorized,
 }
 
-pub fn ensure_authorized(headers: &HeaderMap, config: &Config) -> Result<(), AuthError> {
-    let expected = config.api_key();
-    if expected.is_empty() {
-        return Ok(());
-    }
-
-    // Önce header'dan kontrol et
-    if let Some(header_value) = headers.get(AUTHORIZATION) {
-        if let Ok(header_str) = header_value.to_str() {
-            if let Some(provided) = header_str
-                .strip_prefix("Bearer ")
-                .or_else(|| header_str.strip_prefix("bearer "))
-            {
-                let provided = provided.trim();
-                if subtle_equals(provided.as_bytes(), expected.as_bytes()) {
-                    return Ok(());
-                }
-            }
-        }
-    }
-
-    Err(AuthError::Missing)
-}
-
-// Query parameter'dan API key kontrolü için yeni fonksiyon
+// Query parameter'dan API key kontrolü için fonksiyon
 pub fn ensure_authorized_with_query(
     headers: &HeaderMap, 
     query_params: &HashMap<String, String>, 

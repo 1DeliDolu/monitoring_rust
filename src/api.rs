@@ -20,31 +20,17 @@ use crate::{
 pub enum ApiError {
     #[error("unauthorized")]
     Unauthorized,
-    #[error("bad request: {0}")]
-    BadRequest(String),
-    #[error("internal server error")]
-    Internal,
 }
 
 impl IntoResponse for ApiError {
     fn into_response(self) -> Response {
-        match self {
-            ApiError::Unauthorized => (axum::http::StatusCode::UNAUTHORIZED, self.to_string()).into_response(),
-            ApiError::BadRequest(_) => (axum::http::StatusCode::BAD_REQUEST, self.to_string()).into_response(),
-            ApiError::Internal => (
-                axum::http::StatusCode::INTERNAL_SERVER_ERROR,
-                "internal server error".to_string(),
-            )
-                .into_response(),
-        }
+        (axum::http::StatusCode::UNAUTHORIZED, self.to_string()).into_response()
     }
 }
 
 impl From<AuthError> for ApiError {
-    fn from(value: AuthError) -> Self {
-        match value {
-            AuthError::Missing | AuthError::Invalid | AuthError::Unauthorized => ApiError::Unauthorized,
-        }
+    fn from(_value: AuthError) -> Self {
+        ApiError::Unauthorized
     }
 }
 
@@ -133,10 +119,6 @@ pub async fn snapshot_file(
         }
         Err(_) => Ok(Json(json!({ "snapshots": [] }))),
     }
-}
-
-fn authorise(state: &Arc<AppState>, headers: &HeaderMap) -> Result<(), ApiError> {
-    auth::ensure_authorized(headers, state.config()).map_err(ApiError::from)
 }
 
 fn authorise_with_query(
