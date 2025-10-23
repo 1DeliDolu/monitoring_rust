@@ -28,11 +28,42 @@ pub async fn show_ui(State(state): State<SharedState>) -> Html<String> {
             .top_processes
             .iter()
             .map(|process| {
+                let thread_display = process
+                    .thread_count
+                    .map(|count| format!(" · Threads {count}"))
+                    .unwrap_or_default();
                 format!(
-                    "<li><strong>{}</strong> — CPU {:.1}% · MEM {} MB</li>",
+                    "<li><strong>{}</strong> — CPU {:.1}% · MEM {} MB ({:.1}%) · Disk ↓ {:.1} kbps ↑ {:.1} kbps{}</li>",
                     html_escape(&process.name),
                     process.cpu_pct,
-                    process.memory_mb
+                    process.memory_mb,
+                    process.memory_pct,
+                    process.disk_read_kbps,
+                    process.disk_write_kbps,
+                    thread_display
+                )
+            })
+            .collect::<Vec<_>>()
+            .join("")
+    };
+
+    let gpu = if snapshot.gpus.is_empty() {
+        "<li>No GPU data</li>".to_string()
+    } else {
+        snapshot
+            .gpus
+            .iter()
+            .map(|gpu| {
+                format!(
+                    "<li><strong>{}</strong> — Util {:.1}% · Mem {} / {} MB ({:.1}%){} </li>",
+                    html_escape(&gpu.name),
+                    gpu.gpu_usage_pct.unwrap_or(0.0),
+                    gpu.memory_used_mb.unwrap_or(0),
+                    gpu.memory_total_mb.unwrap_or(0),
+                    gpu.memory_usage_pct.unwrap_or(0.0),
+                    gpu.temperature_celsius
+                        .map(|temp| format!(" · Temp {:.0}C", temp))
+                        .unwrap_or_default()
                 )
             })
             .collect::<Vec<_>>()
@@ -105,6 +136,10 @@ pub async fn show_ui(State(state): State<SharedState>) -> Html<String> {
         <ul>{disks}</ul>
     </section>
     <section>
+        <h2>GPU</h2>
+        <ul>{gpu}</ul>
+    </section>
+    <section>
         <h2>Network</h2>
         <ul>{network}</ul>
     </section>
@@ -136,6 +171,7 @@ pub async fn show_ui(State(state): State<SharedState>) -> Html<String> {
             .map(|dt| dt.format("%Y-%m-%d %H:%M:%S").to_string())
             .unwrap_or_else(|| snapshot.timestamp.to_string()),
         disks = disks,
+        gpu = gpu,
         network = network,
         processes = processes,
     );

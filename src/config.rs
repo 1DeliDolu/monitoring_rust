@@ -30,16 +30,16 @@ impl Config {
         let api_key = env::var("SYSTEM_API_KEY").map_err(|_| ConfigError::MissingApiKey)?;
         let bind_address =
             env::var("API_BIND_ADDRESS").unwrap_or_else(|_| "127.0.0.1:7000".to_string());
-        let snapshot_dir =
-            env::var("SNAPSHOT_DIR").map(PathBuf::from).unwrap_or_else(|_| PathBuf::from("data/snapshots"));
+        let snapshot_dir = env::var("SNAPSHOT_DIR")
+            .map(PathBuf::from)
+            .unwrap_or_else(|_| PathBuf::from("data/snapshots"));
 
-        let collection_interval = env::var("COLLECTION_INTERVAL_SECS")
-            .unwrap_or_else(|_| "5".to_string());
+        let collection_interval =
+            env::var("COLLECTION_INTERVAL_SECS").unwrap_or_else(|_| "5".to_string());
         let collection_interval_secs: f64 = collection_interval
             .parse()
             .map_err(|_| ConfigError::InvalidInterval(collection_interval.clone()))?;
-        let history_limit = env::var("HISTORY_LIMIT")
-            .unwrap_or_else(|_| "288".to_string());
+        let history_limit = env::var("HISTORY_LIMIT").unwrap_or_else(|_| "288".to_string());
         let history_limit: usize = history_limit
             .parse()
             .map_err(|_| ConfigError::InvalidHistory(history_limit.clone()))?;

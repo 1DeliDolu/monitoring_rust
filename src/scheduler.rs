@@ -18,9 +18,10 @@ pub fn spawn(state: SharedState) {
             let prev_for_collect = previous.clone();
             let interval_copy = interval;
 
-            let collection_result =
-                tokio::task::spawn_blocking(move || collector::collect_snapshot(prev_for_collect, interval_copy))
-                    .await;
+            let collection_result = tokio::task::spawn_blocking(move || {
+                collector::collect_snapshot(prev_for_collect, interval_copy)
+            })
+            .await;
 
             let snapshot = match collection_result {
                 Ok(snapshot) => snapshot,

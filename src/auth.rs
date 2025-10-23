@@ -11,9 +11,9 @@ pub enum AuthError {
 
 // Query parameter'dan API key kontrolü için fonksiyon
 pub fn ensure_authorized_with_query(
-    headers: &HeaderMap, 
-    query_params: &HashMap<String, String>, 
-    config: &Config
+    headers: &HeaderMap,
+    query_params: &HashMap<String, String>,
+    config: &Config,
 ) -> Result<(), AuthError> {
     let expected = config.api_key();
     if expected.is_empty() {
@@ -36,7 +36,8 @@ pub fn ensure_authorized_with_query(
     }
 
     // Query parameter'dan kontrol et
-    if let Some(api_token) = query_params.get("api_token")
+    if let Some(api_token) = query_params
+        .get("api_token")
         .or_else(|| query_params.get("apitoken"))
         .or_else(|| query_params.get("token"))
         .or_else(|| query_params.get("key"))

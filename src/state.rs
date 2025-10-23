@@ -46,10 +46,6 @@ impl AppState {
 
     pub async fn history(&self, limit: usize) -> Vec<SystemSnapshot> {
         let history = self.history.lock().await;
-        history
-            .iter()
-            .take(limit)
-            .cloned()
-            .collect()
+        history.iter().take(limit).cloned().collect()
     }
 }

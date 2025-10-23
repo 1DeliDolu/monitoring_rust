@@ -34,23 +34,20 @@ pub async fn save_snapshot(
     fs::create_dir_all(dir).await?;
 
     let file = dir.join("system_snapshot.json");
-    
+
     // Mevcut snapshot history'yi oku
     let mut history = read_history(&file).await.unwrap_or_default();
-    
+
     // Yeni snapshot'ı ekle
     history.snapshots.push(snapshot.clone());
-    
+
     // History limit'e göre eski verileri sil
     let limit = config.history_limit();
     if history.snapshots.len() > limit {
         let skip_count = history.snapshots.len() - limit;
-        history.snapshots = history.snapshots
-            .into_iter()
-            .skip(skip_count)
-            .collect();
+        history.snapshots = history.snapshots.into_iter().skip(skip_count).collect();
     }
-    
+
     // JSON'a yaz
     let payload = serde_json::to_string_pretty(&history)?;
     fs::write(&file, payload).await?;
