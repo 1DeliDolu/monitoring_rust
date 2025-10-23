@@ -1,0 +1,3995 @@
+{
+  "snapshots": [
+    {
+      "timestamp": 1761261140544,
+      "hostname": "Musta",
+      "uptime_seconds": 28849,
+      "cpu_usage_pct": 4.014598369598389,
+      "load_avg_one": 0.52,
+      "load_avg_five": 0.37,
+      "load_avg_fifteen": 0.37,
+      "mem_used_mb": 1890892,
+      "mem_total_mb": 16225468,
+      "mem_available_mb": 14334576,
+      "disks": [
+        {
+          "name": "/dev/sdf",
+          "mount_point": "/",
+          "filesystem": "ext4",
+          "total_gb": 1006.853931427002,
+          "used_gb": 67.90628433227539,
+          "used_pct": 6.744402759199899
+        },
+        {
+          "name": "C:\\134",
+          "mount_point": "/mnt/c",
+          "filesystem": "9p",
+          "total_gb": 231.8925743103027,
+          "used_gb": 159.2647247314453,
+          "used_pct": 68.68039013544616
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.916316986083984,
+          "used_pct": 2.832934813503861
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.916316986083984,
+          "used_pct": 2.832934813503861
+        }
+      ],
+      "network": [
+        {
+          "name": "eth0",
+          "received_total_bytes": 618021509,
+          "transmitted_total_bytes": 155816902,
+          "received_kbps": 0.0,
+          "transmitted_kbps": 0.0
+        },
+        {
+          "name": "lo",
+          "received_total_bytes": 294058692,
+          "transmitted_total_bytes": 294058692,
+          "received_kbps": 0.0,
+          "transmitted_kbps": 0.0
+        }
+      ],
+      "top_processes": [
+        {
+          "pid": 33133,
+          "name": "agent",
+          "cpu_pct": 8.759123802185059,
+          "memory_mb": 11628,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 33164,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.379561901092529,
+          "memory_mb": 11628,
+          "status": "Running"
+        },
+        {
+          "pid": 33166,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.379561901092529,
+          "memory_mb": 11628,
+          "status": "Running"
+        },
+        {
+          "pid": 7006,
+          "name": "dbus-daemon",
+          "cpu_pct": 0.0,
+          "memory_mb": 4864,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 975,
+          "name": "docker-desktop-",
+          "cpu_pct": 0.0,
+          "memory_mb": 23820,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 7586,
+          "name": "fuse mainloop",
+          "cpu_pct": 0.0,
+          "memory_mb": 7040,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 4585,
+          "name": "snapd",
+          "cpu_pct": 0.0,
+          "memory_mb": 39352,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31726,
+          "name": "docker",
+          "cpu_pct": 0.0,
+          "memory_mb": 23640,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 7631,
+          "name": "pool-spawner",
+          "cpu_pct": 0.0,
+          "memory_mb": 7424,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24340,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 0.0,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24343,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 0.0,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31756,
+          "name": "docker-compose",
+          "cpu_pct": 0.0,
+          "memory_mb": 52812,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 306,
+          "name": "wsl-pro-service",
+          "cpu_pct": 0.0,
+          "memory_mb": 13944,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 7476,
+          "name": "xdg-desktop-por",
+          "cpu_pct": 0.0,
+          "memory_mb": 14704,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 127,
+          "name": "snapfuse",
+          "cpu_pct": 0.0,
+          "memory_mb": 1412,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 290,
+          "name": "snapfuse",
+          "cpu_pct": 0.0,
+          "memory_mb": 11936,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 853,
+          "name": "bash",
+          "cpu_pct": 0.0,
+          "memory_mb": 4992,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24338,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 0.0,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31962,
+          "name": "SessionLeader",
+          "cpu_pct": 0.0,
+          "memory_mb": 1032,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31963,
+          "name": "Relay(31968)",
+          "cpu_pct": 0.0,
+          "memory_mb": 1168,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 4583,
+          "name": "snapfuse",
+          "cpu_pct": 0.0,
+          "memory_mb": 12424,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 977,
+          "name": "docker-desktop-",
+          "cpu_pct": 0.0,
+          "memory_mb": 23820,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 7633,
+          "name": "gdbus",
+          "cpu_pct": 0.0,
+          "memory_mb": 7424,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 4690,
+          "name": "snapd",
+          "cpu_pct": 0.0,
+          "memory_mb": 39352,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 7587,
+          "name": "fuse mainloop",
+          "cpu_pct": 0.0,
+          "memory_mb": 7040,
+          "status": "Sleeping"
+        }
+      ]
+    },
+    {
+      "timestamp": 1761261141129,
+      "hostname": "Musta",
+      "uptime_seconds": 28849,
+      "cpu_usage_pct": 3.3333334922790527,
+      "load_avg_one": 0.52,
+      "load_avg_five": 0.37,
+      "load_avg_fifteen": 0.37,
+      "mem_used_mb": 1891664,
+      "mem_total_mb": 16225468,
+      "mem_available_mb": 14333804,
+      "disks": [
+        {
+          "name": "/dev/sdf",
+          "mount_point": "/",
+          "filesystem": "ext4",
+          "total_gb": 1006.853931427002,
+          "used_gb": 67.90628433227539,
+          "used_pct": 6.744402759199899
+        },
+        {
+          "name": "C:\\134",
+          "mount_point": "/mnt/c",
+          "filesystem": "9p",
+          "total_gb": 231.8925743103027,
+          "used_gb": 159.2649688720703,
+          "used_pct": 68.68049541722404
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.9136505126953125,
+          "used_pct": 2.8318426216180277
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.9136505126953125,
+          "used_pct": 2.8318426216180277
+        }
+      ],
+      "network": [
+        {
+          "name": "eth0",
+          "received_total_bytes": 618021509,
+          "transmitted_total_bytes": 155816902,
+          "received_kbps": 64.528125,
+          "transmitted_kbps": 5.3625
+        },
+        {
+          "name": "lo",
+          "received_total_bytes": 294058692,
+          "transmitted_total_bytes": 294058692,
+          "received_kbps": 1114.875,
+          "transmitted_kbps": 1114.875
+        }
+      ],
+      "top_processes": [
+        {
+          "pid": 24336,
+          "name": "agent",
+          "cpu_pct": 8.88888931274414,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 32262,
+          "name": "codex",
+          "cpu_pct": 8.88888931274414,
+          "memory_mb": 29456,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24355,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.44444465637207,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 24352,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.44444465637207,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 31838,
+          "name": "sh",
+          "cpu_pct": 0.0,
+          "memory_mb": 1536,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31829,
+          "name": "V8Worker",
+          "cpu_pct": 0.0,
+          "memory_mb": 70300,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 33154,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 0.0,
+          "memory_mb": 11704,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 32269,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 0.0,
+          "memory_mb": 29456,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 4597,
+          "name": "snapd",
+          "cpu_pct": 0.0,
+          "memory_mb": 39352,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 7566,
+          "name": "pool-spawner",
+          "cpu_pct": 0.0,
+          "memory_mb": 7040,
+          "status": "Sleeping"
+        }
+      ]
+    },
+    {
+      "timestamp": 1761261146372,
+      "hostname": "Musta",
+      "uptime_seconds": 28854,
+      "cpu_usage_pct": 6.343283653259277,
+      "load_avg_one": 0.48,
+      "load_avg_five": 0.37,
+      "load_avg_fifteen": 0.37,
+      "mem_used_mb": 1894748,
+      "mem_total_mb": 16225468,
+      "mem_available_mb": 14330720,
+      "disks": [
+        {
+          "name": "/dev/sdf",
+          "mount_point": "/",
+          "filesystem": "ext4",
+          "total_gb": 1006.853931427002,
+          "used_gb": 67.90628814697266,
+          "used_pct": 6.744403138072857
+        },
+        {
+          "name": "C:\\134",
+          "mount_point": "/mnt/c",
+          "filesystem": "9p",
+          "total_gb": 231.8925743103027,
+          "used_gb": 159.26633834838867,
+          "used_pct": 68.68108598219682
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.909854888916016,
+          "used_pct": 2.83028792787496
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.909854888916016,
+          "used_pct": 2.83028792787496
+        }
+      ],
+      "network": [
+        {
+          "name": "eth0",
+          "received_total_bytes": 618055612,
+          "transmitted_total_bytes": 155956907,
+          "received_kbps": 53.2859375,
+          "transmitted_kbps": 218.7578125
+        },
+        {
+          "name": "lo",
+          "received_total_bytes": 294771586,
+          "transmitted_total_bytes": 294771586,
+          "received_kbps": 1113.896875,
+          "transmitted_kbps": 1113.896875
+        }
+      ],
+      "top_processes": [
+        {
+          "pid": 31757,
+          "name": "docker-compose",
+          "cpu_pct": 13.43283462524414,
+          "memory_mb": 52812,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24336,
+          "name": "agent",
+          "cpu_pct": 8.95522403717041,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31745,
+          "name": "docker-compose",
+          "cpu_pct": 8.95522403717041,
+          "memory_mb": 52812,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24350,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.477612018585205,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 24356,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.477612018585205,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24357,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.477612018585205,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 12512,
+          "name": "Relay(12513)",
+          "cpu_pct": 4.477612018585205,
+          "memory_mb": 1168,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24360,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.477612018585205,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 31829,
+          "name": "V8Worker",
+          "cpu_pct": 0.0,
+          "memory_mb": 70300,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 8,
+          "name": "init",
+          "cpu_pct": 0.0,
+          "memory_mb": 2160,
+          "status": "Sleeping"
+        }
+      ]
+    },
+    {
+      "timestamp": 1761261151614,
+      "hostname": "Musta",
+      "uptime_seconds": 28860,
+      "cpu_usage_pct": 5.128205299377441,
+      "load_avg_one": 0.44,
+      "load_avg_five": 0.36,
+      "load_avg_fifteen": 0.37,
+      "mem_used_mb": 1897156,
+      "mem_total_mb": 16225468,
+      "mem_available_mb": 14328312,
+      "disks": [
+        {
+          "name": "/dev/sdf",
+          "mount_point": "/",
+          "filesystem": "ext4",
+          "total_gb": 1006.853931427002,
+          "used_gb": 67.90629196166992,
+          "used_pct": 6.744403516945814
+        },
+        {
+          "name": "C:\\134",
+          "mount_point": "/mnt/c",
+          "filesystem": "9p",
+          "total_gb": 231.8925743103027,
+          "used_gb": 159.26633834838867,
+          "used_pct": 68.68108598219682
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.905773162841797,
+          "used_pct": 2.82861604616131
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.905773162841797,
+          "used_pct": 2.82861604616131
+        }
+      ],
+      "network": [
+        {
+          "name": "lo",
+          "received_total_bytes": 295132668,
+          "transmitted_total_bytes": 295132668,
+          "received_kbps": 564.190625,
+          "transmitted_kbps": 564.190625
+        },
+        {
+          "name": "eth0",
+          "received_total_bytes": 618158248,
+          "transmitted_total_bytes": 156253683,
+          "received_kbps": 160.36875,
+          "transmitted_kbps": 463.7125
+        }
+      ],
+      "top_processes": [
+        {
+          "pid": 32266,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.395604610443115,
+          "memory_mb": 29852,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24336,
+          "name": "agent",
+          "cpu_pct": 4.395604610443115,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24339,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 0.0,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 7230,
+          "name": "at-spi-bus-laun",
+          "cpu_pct": 0.0,
+          "memory_mb": 7424,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31732,
+          "name": "docker",
+          "cpu_pct": 0.0,
+          "memory_mb": 23640,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 7586,
+          "name": "fuse mainloop",
+          "cpu_pct": 0.0,
+          "memory_mb": 7040,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 32250,
+          "name": "MainThread",
+          "cpu_pct": 0.0,
+          "memory_mb": 51328,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 32258,
+          "name": "V8Worker",
+          "cpu_pct": 0.0,
+          "memory_mb": 51328,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 972,
+          "name": "docker-desktop-",
+          "cpu_pct": 0.0,
+          "memory_mb": 23820,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 4583,
+          "name": "snapfuse",
+          "cpu_pct": 0.0,
+          "memory_mb": 12424,
+          "status": "Sleeping"
+        }
+      ]
+    },
+    {
+      "timestamp": 1761261156852,
+      "hostname": "Musta",
+      "uptime_seconds": 28865,
+      "cpu_usage_pct": 1.8867924213409424,
+      "load_avg_one": 0.4,
+      "load_avg_five": 0.36,
+      "load_avg_fifteen": 0.36,
+      "mem_used_mb": 1901744,
+      "mem_total_mb": 16225468,
+      "mem_available_mb": 14323724,
+      "disks": [
+        {
+          "name": "/dev/sdf",
+          "mount_point": "/",
+          "filesystem": "ext4",
+          "total_gb": 1006.853931427002,
+          "used_gb": 67.90630340576172,
+          "used_pct": 6.744404653564687
+        },
+        {
+          "name": "C:\\134",
+          "mount_point": "/mnt/c",
+          "filesystem": "9p",
+          "total_gb": 231.8925743103027,
+          "used_gb": 159.2632827758789,
+          "used_pct": 68.67976831494556
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.90130615234375,
+          "used_pct": 2.826786351313942
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.90130615234375,
+          "used_pct": 2.826786351313942
+        }
+      ],
+      "network": [
+        {
+          "name": "lo",
+          "received_total_bytes": 295493541,
+          "transmitted_total_bytes": 295493541,
+          "received_kbps": 563.8640625,
+          "transmitted_kbps": 563.8640625
+        },
+        {
+          "name": "eth0",
+          "received_total_bytes": 618191668,
+          "transmitted_total_bytes": 156253947,
+          "received_kbps": 52.21875,
+          "transmitted_kbps": 0.4125
+        }
+      ],
+      "top_processes": [
+        {
+          "pid": 24336,
+          "name": "agent",
+          "cpu_pct": 13.584905624389648,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 32262,
+          "name": "codex",
+          "cpu_pct": 4.52830171585083,
+          "memory_mb": 29596,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24358,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.52830171585083,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 419,
+          "name": "sh",
+          "cpu_pct": 0.0,
+          "memory_mb": 1536,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31963,
+          "name": "Relay(31968)",
+          "cpu_pct": 0.0,
+          "memory_mb": 1168,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31746,
+          "name": "docker-compose",
+          "cpu_pct": 0.0,
+          "memory_mb": 52940,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 2,
+          "name": "init-systemd(Ub",
+          "cpu_pct": 0.0,
+          "memory_mb": 1920,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 307,
+          "name": "wsl-pro-service",
+          "cpu_pct": 0.0,
+          "memory_mb": 13944,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31728,
+          "name": "docker",
+          "cpu_pct": 0.0,
+          "memory_mb": 23640,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 4597,
+          "name": "snapd",
+          "cpu_pct": 0.0,
+          "memory_mb": 39480,
+          "status": "Sleeping"
+        }
+      ]
+    },
+    {
+      "timestamp": 1761261162094,
+      "hostname": "Musta",
+      "uptime_seconds": 28870,
+      "cpu_usage_pct": 6.015037536621094,
+      "load_avg_one": 0.37,
+      "load_avg_five": 0.35,
+      "load_avg_fifteen": 0.36,
+      "mem_used_mb": 1903716,
+      "mem_total_mb": 16225468,
+      "mem_available_mb": 14321752,
+      "disks": [
+        {
+          "name": "/dev/sdf",
+          "mount_point": "/",
+          "filesystem": "ext4",
+          "total_gb": 1006.853931427002,
+          "used_gb": 67.90630340576172,
+          "used_pct": 6.744404653564687
+        },
+        {
+          "name": "C:\\134",
+          "mount_point": "/mnt/c",
+          "filesystem": "9p",
+          "total_gb": 231.8925743103027,
+          "used_gb": 159.26541900634766,
+          "used_pct": 68.680689530502
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.889034271240234,
+          "used_pct": 2.8217597686290707
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.889034271240234,
+          "used_pct": 2.8217597686290707
+        }
+      ],
+      "network": [
+        {
+          "name": "eth0",
+          "received_total_bytes": 618222520,
+          "transmitted_total_bytes": 156259449,
+          "received_kbps": 48.20625,
+          "transmitted_kbps": 8.596875
+        },
+        {
+          "name": "lo",
+          "received_total_bytes": 295539701,
+          "transmitted_total_bytes": 295539701,
+          "received_kbps": 72.125,
+          "transmitted_kbps": 72.125
+        }
+      ],
+      "top_processes": [
+        {
+          "pid": 24336,
+          "name": "agent",
+          "cpu_pct": 9.022557258605955,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31756,
+          "name": "docker-compose",
+          "cpu_pct": 9.022557258605955,
+          "memory_mb": 52940,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31745,
+          "name": "docker-compose",
+          "cpu_pct": 4.5112786293029785,
+          "memory_mb": 52940,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 32274,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.5112786293029785,
+          "memory_mb": 29596,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24360,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.5112786293029785,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24355,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.5112786293029785,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 32262,
+          "name": "codex",
+          "cpu_pct": 4.5112786293029785,
+          "memory_mb": 29596,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24354,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.5112786293029785,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 1901,
+          "name": "gdbus",
+          "cpu_pct": 0.0,
+          "memory_mb": 7680,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 7232,
+          "name": "gmain",
+          "cpu_pct": 0.0,
+          "memory_mb": 7424,
+          "status": "Sleeping"
+        }
+      ]
+    },
+    {
+      "timestamp": 1761261167333,
+      "hostname": "Musta",
+      "uptime_seconds": 28875,
+      "cpu_usage_pct": 2.25563907623291,
+      "load_avg_one": 0.42,
+      "load_avg_five": 0.36,
+      "load_avg_fifteen": 0.37,
+      "mem_used_mb": 1905736,
+      "mem_total_mb": 16225468,
+      "mem_available_mb": 14319732,
+      "disks": [
+        {
+          "name": "/dev/sdf",
+          "mount_point": "/",
+          "filesystem": "ext4",
+          "total_gb": 1006.853931427002,
+          "used_gb": 67.90631866455078,
+          "used_pct": 6.744406169056516
+        },
+        {
+          "name": "C:\\134",
+          "mount_point": "/mnt/c",
+          "filesystem": "9p",
+          "total_gb": 231.8925743103027,
+          "used_gb": 159.2657699584961,
+          "used_pct": 68.6808408730577
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.889034271240234,
+          "used_pct": 2.8217597686290707
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.889034271240234,
+          "used_pct": 2.8217597686290707
+        }
+      ],
+      "network": [
+        {
+          "name": "eth0",
+          "received_total_bytes": 618309501,
+          "transmitted_total_bytes": 156425829,
+          "received_kbps": 135.9078125,
+          "transmitted_kbps": 259.96875
+        },
+        {
+          "name": "lo",
+          "received_total_bytes": 295900589,
+          "transmitted_total_bytes": 295900589,
+          "received_kbps": 563.8875,
+          "transmitted_kbps": 563.8875
+        }
+      ],
+      "top_processes": [
+        {
+          "pid": 24336,
+          "name": "agent",
+          "cpu_pct": 9.022557258605955,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24359,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.5112786293029785,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 24352,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.5112786293029785,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 24351,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.5112786293029785,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 7590,
+          "name": "pool-spawner",
+          "cpu_pct": 0.0,
+          "memory_mb": 20992,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 294,
+          "name": "rs:main Q:Reg",
+          "cpu_pct": 0.0,
+          "memory_mb": 5376,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 291,
+          "name": "snapfuse",
+          "cpu_pct": 0.0,
+          "memory_mb": 11936,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 108,
+          "name": "snapfuse",
+          "cpu_pct": 0.0,
+          "memory_mb": 1540,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 252,
+          "name": "systemd-logind",
+          "cpu_pct": 0.0,
+          "memory_mb": 8192,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24342,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 0.0,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        }
+      ]
+    },
+    {
+      "timestamp": 1761261172573,
+      "hostname": "Musta",
+      "uptime_seconds": 28881,
+      "cpu_usage_pct": 11.985018730163574,
+      "load_avg_one": 0.39,
+      "load_avg_five": 0.35,
+      "load_avg_fifteen": 0.36,
+      "mem_used_mb": 1905984,
+      "mem_total_mb": 16225468,
+      "mem_available_mb": 14319484,
+      "disks": [
+        {
+          "name": "/dev/sdf",
+          "mount_point": "/",
+          "filesystem": "ext4",
+          "total_gb": 1006.853931427002,
+          "used_gb": 67.90631866455078,
+          "used_pct": 6.744406169056516
+        },
+        {
+          "name": "C:\\134",
+          "mount_point": "/mnt/c",
+          "filesystem": "9p",
+          "total_gb": 231.8925743103027,
+          "used_gb": 159.26577377319336,
+          "used_pct": 68.68084251808547
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.8890380859375,
+          "used_pct": 2.8217613311353453
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.8890380859375,
+          "used_pct": 2.8217613311353453
+        }
+      ],
+      "network": [
+        {
+          "name": "eth0",
+          "received_total_bytes": 618309501,
+          "transmitted_total_bytes": 156425829,
+          "received_kbps": 0.0,
+          "transmitted_kbps": 0.0
+        },
+        {
+          "name": "lo",
+          "received_total_bytes": 296605580,
+          "transmitted_total_bytes": 296605580,
+          "received_kbps": 1101.5484375,
+          "transmitted_kbps": 1101.5484375
+        }
+      ],
+      "top_processes": [
+        {
+          "pid": 24336,
+          "name": "agent",
+          "cpu_pct": 13.483145713806152,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31745,
+          "name": "docker-compose",
+          "cpu_pct": 8.988763809204102,
+          "memory_mb": 52940,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31757,
+          "name": "docker-compose",
+          "cpu_pct": 8.988763809204102,
+          "memory_mb": 52940,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24344,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.494381904602051,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24350,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.494381904602051,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 88,
+          "name": "systemd-udevd",
+          "cpu_pct": 4.494381904602051,
+          "memory_mb": 6272,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 119,
+          "name": "snapfuse",
+          "cpu_pct": 0.0,
+          "memory_mb": 1540,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24343,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 0.0,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 136,
+          "name": "snapfuse",
+          "cpu_pct": 0.0,
+          "memory_mb": 11936,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 7633,
+          "name": "gdbus",
+          "cpu_pct": 0.0,
+          "memory_mb": 7424,
+          "status": "Sleeping"
+        }
+      ]
+    },
+    {
+      "timestamp": 1761261177811,
+      "hostname": "Musta",
+      "uptime_seconds": 28886,
+      "cpu_usage_pct": 2.6615970134735107,
+      "load_avg_one": 0.36,
+      "load_avg_five": 0.35,
+      "load_avg_fifteen": 0.36,
+      "mem_used_mb": 1908376,
+      "mem_total_mb": 16225468,
+      "mem_available_mb": 14317092,
+      "disks": [
+        {
+          "name": "/dev/sdf",
+          "mount_point": "/",
+          "filesystem": "ext4",
+          "total_gb": 1006.853931427002,
+          "used_gb": 67.90632629394531,
+          "used_pct": 6.744406926802431
+        },
+        {
+          "name": "C:\\134",
+          "mount_point": "/mnt/c",
+          "filesystem": "9p",
+          "total_gb": 231.8925743103027,
+          "used_gb": 159.26583099365234,
+          "used_pct": 68.68086719350217
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.8890380859375,
+          "used_pct": 2.8217613311353453
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.8890380859375,
+          "used_pct": 2.8217613311353453
+        }
+      ],
+      "network": [
+        {
+          "name": "eth0",
+          "received_total_bytes": 618385325,
+          "transmitted_total_bytes": 156593710,
+          "received_kbps": 118.475,
+          "transmitted_kbps": 262.3140625
+        },
+        {
+          "name": "lo",
+          "received_total_bytes": 297338605,
+          "transmitted_total_bytes": 297338605,
+          "received_kbps": 1145.3515625,
+          "transmitted_kbps": 1145.3515625
+        }
+      ],
+      "top_processes": [
+        {
+          "pid": 32266,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.562737941741943,
+          "memory_mb": 29516,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24357,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.562737941741943,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 24336,
+          "name": "agent",
+          "cpu_pct": 4.562737941741943,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24350,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.562737941741943,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 31756,
+          "name": "docker-compose",
+          "cpu_pct": 0.0,
+          "memory_mb": 52940,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31755,
+          "name": "docker-compose",
+          "cpu_pct": 0.0,
+          "memory_mb": 52940,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31844,
+          "name": "V8Worker",
+          "cpu_pct": 0.0,
+          "memory_mb": 157276,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31851,
+          "name": "libuv-worker",
+          "cpu_pct": 0.0,
+          "memory_mb": 157276,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 7632,
+          "name": "gmain",
+          "cpu_pct": 0.0,
+          "memory_mb": 7424,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31873,
+          "name": "V8Worker",
+          "cpu_pct": 0.0,
+          "memory_mb": 107800,
+          "status": "Sleeping"
+        }
+      ]
+    },
+    {
+      "timestamp": 1761261183055,
+      "hostname": "Musta",
+      "uptime_seconds": 28891,
+      "cpu_usage_pct": 4.074073791503906,
+      "load_avg_one": 0.33,
+      "load_avg_five": 0.34,
+      "load_avg_fifteen": 0.36,
+      "mem_used_mb": 1910124,
+      "mem_total_mb": 16225468,
+      "mem_available_mb": 14315344,
+      "disks": [
+        {
+          "name": "/dev/sdf",
+          "mount_point": "/",
+          "filesystem": "ext4",
+          "total_gb": 1006.853931427002,
+          "used_gb": 67.90632629394531,
+          "used_pct": 6.744406926802431
+        },
+        {
+          "name": "C:\\134",
+          "mount_point": "/mnt/c",
+          "filesystem": "9p",
+          "total_gb": 231.8925743103027,
+          "used_gb": 159.2657699584961,
+          "used_pct": 68.6808408730577
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.8890380859375,
+          "used_pct": 2.8217613311353453
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.8890380859375,
+          "used_pct": 2.8217613311353453
+        }
+      ],
+      "network": [
+        {
+          "name": "eth0",
+          "received_total_bytes": 618438660,
+          "transmitted_total_bytes": 156766647,
+          "received_kbps": 83.3359375,
+          "transmitted_kbps": 270.2140625
+        },
+        {
+          "name": "lo",
+          "received_total_bytes": 298051926,
+          "transmitted_total_bytes": 298051926,
+          "received_kbps": 1114.5640625,
+          "transmitted_kbps": 1114.5640625
+        }
+      ],
+      "top_processes": [
+        {
+          "pid": 32262,
+          "name": "codex",
+          "cpu_pct": 8.88888931274414,
+          "memory_mb": 29636,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24336,
+          "name": "agent",
+          "cpu_pct": 8.88888931274414,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24338,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 0.0,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31852,
+          "name": "libuv-worker",
+          "cpu_pct": 0.0,
+          "memory_mb": 157276,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 32259,
+          "name": "V8Worker",
+          "cpu_pct": 0.0,
+          "memory_mb": 51328,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 120,
+          "name": "snapfuse",
+          "cpu_pct": 0.0,
+          "memory_mb": 1540,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 7594,
+          "name": "gdbus",
+          "cpu_pct": 0.0,
+          "memory_mb": 20992,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 422,
+          "name": "login",
+          "cpu_pct": 0.0,
+          "memory_mb": 4096,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 7,
+          "name": "init",
+          "cpu_pct": 0.0,
+          "memory_mb": 2160,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 4586,
+          "name": "snapd",
+          "cpu_pct": 0.0,
+          "memory_mb": 39864,
+          "status": "Sleeping"
+        }
+      ]
+    },
+    {
+      "timestamp": 1761261188299,
+      "hostname": "Musta",
+      "uptime_seconds": 28896,
+      "cpu_usage_pct": 1.5094339847564695,
+      "load_avg_one": 0.3,
+      "load_avg_five": 0.34,
+      "load_avg_fifteen": 0.36,
+      "mem_used_mb": 1912876,
+      "mem_total_mb": 16225468,
+      "mem_available_mb": 14312592,
+      "disks": [
+        {
+          "name": "/dev/sdf",
+          "mount_point": "/",
+          "filesystem": "ext4",
+          "total_gb": 1006.853931427002,
+          "used_gb": 67.90633010864258,
+          "used_pct": 6.744407305675387
+        },
+        {
+          "name": "C:\\134",
+          "mount_point": "/mnt/c",
+          "filesystem": "9p",
+          "total_gb": 231.8925743103027,
+          "used_gb": 159.26585006713867,
+          "used_pct": 68.68087541864107
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.8890380859375,
+          "used_pct": 2.8217613311353453
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.8890380859375,
+          "used_pct": 2.8217613311353453
+        }
+      ],
+      "network": [
+        {
+          "name": "eth0",
+          "received_total_bytes": 618511301,
+          "transmitted_total_bytes": 156773709,
+          "received_kbps": 113.5015625,
+          "transmitted_kbps": 11.034375
+        },
+        {
+          "name": "lo",
+          "received_total_bytes": 298764839,
+          "transmitted_total_bytes": 298764839,
+          "received_kbps": 1113.9265625,
+          "transmitted_kbps": 1113.9265625
+        }
+      ],
+      "top_processes": [
+        {
+          "pid": 24356,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 9.05660343170166,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 24336,
+          "name": "agent",
+          "cpu_pct": 9.05660343170166,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24351,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.52830171585083,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 24353,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.52830171585083,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 31873,
+          "name": "V8Worker",
+          "cpu_pct": 0.0,
+          "memory_mb": 107800,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31831,
+          "name": "V8Worker",
+          "cpu_pct": 0.0,
+          "memory_mb": 70300,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31832,
+          "name": "V8Worker",
+          "cpu_pct": 0.0,
+          "memory_mb": 70300,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31746,
+          "name": "docker-compose",
+          "cpu_pct": 0.0,
+          "memory_mb": 52940,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24334,
+          "name": "bash",
+          "cpu_pct": 0.0,
+          "memory_mb": 1928,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24339,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 0.0,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        }
+      ]
+    },
+    {
+      "timestamp": 1761261193536,
+      "hostname": "Musta",
+      "uptime_seconds": 28902,
+      "cpu_usage_pct": 2.290076494216919,
+      "load_avg_one": 0.28,
+      "load_avg_five": 0.33,
+      "load_avg_fifteen": 0.36,
+      "mem_used_mb": 1910988,
+      "mem_total_mb": 16225468,
+      "mem_available_mb": 14314480,
+      "disks": [
+        {
+          "name": "/dev/sdf",
+          "mount_point": "/",
+          "filesystem": "ext4",
+          "total_gb": 1006.853931427002,
+          "used_gb": 67.90633392333984,
+          "used_pct": 6.744407684548345
+        },
+        {
+          "name": "C:\\134",
+          "mount_point": "/mnt/c",
+          "filesystem": "9p",
+          "total_gb": 231.8925743103027,
+          "used_gb": 159.26369857788086,
+          "used_pct": 68.67994762297351
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.889041900634766,
+          "used_pct": 2.8217628936416195
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.889041900634766,
+          "used_pct": 2.8217628936416195
+        }
+      ],
+      "network": [
+        {
+          "name": "lo",
+          "received_total_bytes": 298768205,
+          "transmitted_total_bytes": 298768205,
+          "received_kbps": 5.259375,
+          "transmitted_kbps": 5.259375
+        },
+        {
+          "name": "eth0",
+          "received_total_bytes": 618565442,
+          "transmitted_total_bytes": 156946295,
+          "received_kbps": 84.5953125,
+          "transmitted_kbps": 269.665625
+        }
+      ],
+      "top_processes": [
+        {
+          "pid": 24336,
+          "name": "agent",
+          "cpu_pct": 9.16030502319336,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31834,
+          "name": "libuv-worker",
+          "cpu_pct": 0.0,
+          "memory_mb": 70300,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 32274,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 0.0,
+          "memory_mb": 29404,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 113,
+          "name": "snapfuse",
+          "cpu_pct": 0.0,
+          "memory_mb": 1540,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 294,
+          "name": "rs:main Q:Reg",
+          "cpu_pct": 0.0,
+          "memory_mb": 5376,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 121,
+          "name": "snapfuse",
+          "cpu_pct": 0.0,
+          "memory_mb": 1540,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31833,
+          "name": "SignalInspector",
+          "cpu_pct": 0.0,
+          "memory_mb": 70300,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 124,
+          "name": "snapfuse",
+          "cpu_pct": 0.0,
+          "memory_mb": 1412,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 7578,
+          "name": "fuse mainloop",
+          "cpu_pct": 0.0,
+          "memory_mb": 7040,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 4583,
+          "name": "snapfuse",
+          "cpu_pct": 0.0,
+          "memory_mb": 12424,
+          "status": "Sleeping"
+        }
+      ]
+    },
+    {
+      "timestamp": 1761261198774,
+      "hostname": "Musta",
+      "uptime_seconds": 28907,
+      "cpu_usage_pct": 1.1406844854354858,
+      "load_avg_one": 0.25,
+      "load_avg_five": 0.32,
+      "load_avg_fifteen": 0.35,
+      "mem_used_mb": 1911708,
+      "mem_total_mb": 16225468,
+      "mem_available_mb": 14313760,
+      "disks": [
+        {
+          "name": "/dev/sdf",
+          "mount_point": "/",
+          "filesystem": "ext4",
+          "total_gb": 1006.853931427002,
+          "used_gb": 67.90633392333984,
+          "used_pct": 6.744407684548345
+        },
+        {
+          "name": "C:\\134",
+          "mount_point": "/mnt/c",
+          "filesystem": "9p",
+          "total_gb": 231.8925743103027,
+          "used_gb": 159.26370239257812,
+          "used_pct": 68.6799492680013
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.889041900634766,
+          "used_pct": 2.8217628936416195
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.889041900634766,
+          "used_pct": 2.8217628936416195
+        }
+      ],
+      "network": [
+        {
+          "name": "eth0",
+          "received_total_bytes": 618565442,
+          "transmitted_total_bytes": 156946295,
+          "received_kbps": 0.0,
+          "transmitted_kbps": 0.0
+        },
+        {
+          "name": "lo",
+          "received_total_bytes": 299132693,
+          "transmitted_total_bytes": 299132693,
+          "received_kbps": 569.5125,
+          "transmitted_kbps": 569.5125
+        }
+      ],
+      "top_processes": [
+        {
+          "pid": 24336,
+          "name": "agent",
+          "cpu_pct": 9.125475883483888,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 32262,
+          "name": "codex",
+          "cpu_pct": 4.562737941741943,
+          "memory_mb": 29404,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24352,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.562737941741943,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 24360,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.562737941741943,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 31842,
+          "name": "V8Worker",
+          "cpu_pct": 0.0,
+          "memory_mb": 157276,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31733,
+          "name": "docker",
+          "cpu_pct": 0.0,
+          "memory_mb": 23640,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31725,
+          "name": "docker",
+          "cpu_pct": 0.0,
+          "memory_mb": 23640,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 977,
+          "name": "docker-desktop-",
+          "cpu_pct": 0.0,
+          "memory_mb": 23820,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 239,
+          "name": "dbus-daemon",
+          "cpu_pct": 0.0,
+          "memory_mb": 4736,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31729,
+          "name": "docker",
+          "cpu_pct": 0.0,
+          "memory_mb": 23640,
+          "status": "Sleeping"
+        }
+      ]
+    },
+    {
+      "timestamp": 1761261204011,
+      "hostname": "Musta",
+      "uptime_seconds": 28912,
+      "cpu_usage_pct": 2.264151096343994,
+      "load_avg_one": 0.23,
+      "load_avg_five": 0.32,
+      "load_avg_fifteen": 0.35,
+      "mem_used_mb": 1912228,
+      "mem_total_mb": 16225468,
+      "mem_available_mb": 14313240,
+      "disks": [
+        {
+          "name": "/dev/sdf",
+          "mount_point": "/",
+          "filesystem": "ext4",
+          "total_gb": 1006.853931427002,
+          "used_gb": 67.90633392333984,
+          "used_pct": 6.744407684548345
+        },
+        {
+          "name": "C:\\134",
+          "mount_point": "/mnt/c",
+          "filesystem": "9p",
+          "total_gb": 231.8925743103027,
+          "used_gb": 159.2637062072754,
+          "used_pct": 68.67995091302907
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.889041900634766,
+          "used_pct": 2.8217628936416195
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.889041900634766,
+          "used_pct": 2.8217628936416195
+        }
+      ],
+      "network": [
+        {
+          "name": "lo",
+          "received_total_bytes": 299493683,
+          "transmitted_total_bytes": 299493683,
+          "received_kbps": 564.046875,
+          "transmitted_kbps": 564.046875
+        },
+        {
+          "name": "eth0",
+          "received_total_bytes": 618567912,
+          "transmitted_total_bytes": 156946295,
+          "received_kbps": 3.859375,
+          "transmitted_kbps": 0.0
+        }
+      ],
+      "top_processes": [
+        {
+          "pid": 24357,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.52830171585083,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 24361,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.52830171585083,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 24336,
+          "name": "agent",
+          "cpu_pct": 4.52830171585083,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 32268,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 0.0,
+          "memory_mb": 29404,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 978,
+          "name": "docker-desktop-",
+          "cpu_pct": 0.0,
+          "memory_mb": 23820,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 32267,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 0.0,
+          "memory_mb": 29404,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31758,
+          "name": "docker-compose",
+          "cpu_pct": 0.0,
+          "memory_mb": 52940,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31843,
+          "name": "V8Worker",
+          "cpu_pct": 0.0,
+          "memory_mb": 157276,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 295,
+          "name": "snapfuse",
+          "cpu_pct": 0.0,
+          "memory_mb": 11936,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 32264,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 0.0,
+          "memory_mb": 29404,
+          "status": "Sleeping"
+        }
+      ]
+    },
+    {
+      "timestamp": 1761261209253,
+      "hostname": "Musta",
+      "uptime_seconds": 28917,
+      "cpu_usage_pct": 0.7662835121154785,
+      "load_avg_one": 0.21,
+      "load_avg_five": 0.31,
+      "load_avg_fifteen": 0.35,
+      "mem_used_mb": 1912676,
+      "mem_total_mb": 16225468,
+      "mem_available_mb": 14312792,
+      "disks": [
+        {
+          "name": "/dev/sdf",
+          "mount_point": "/",
+          "filesystem": "ext4",
+          "total_gb": 1006.853931427002,
+          "used_gb": 67.90633392333984,
+          "used_pct": 6.744407684548345
+        },
+        {
+          "name": "C:\\134",
+          "mount_point": "/mnt/c",
+          "filesystem": "9p",
+          "total_gb": 231.8925743103027,
+          "used_gb": 159.2637062072754,
+          "used_pct": 68.67995091302907
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.889041900634766,
+          "used_pct": 2.8217628936416195
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.889041900634766,
+          "used_pct": 2.8217628936416195
+        }
+      ],
+      "network": [
+        {
+          "name": "lo",
+          "received_total_bytes": 299854664,
+          "transmitted_total_bytes": 299854664,
+          "received_kbps": 564.0328125,
+          "transmitted_kbps": 564.0328125
+        },
+        {
+          "name": "eth0",
+          "received_total_bytes": 618567978,
+          "transmitted_total_bytes": 156946361,
+          "received_kbps": 0.103125,
+          "transmitted_kbps": 0.103125
+        }
+      ],
+      "top_processes": [
+        {
+          "pid": 24360,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.597701072692871,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 24336,
+          "name": "agent",
+          "cpu_pct": 4.597701072692871,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24350,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.597701072692871,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 295,
+          "name": "snapfuse",
+          "cpu_pct": 0.0,
+          "memory_mb": 11936,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 228,
+          "name": "systemd-resolve",
+          "cpu_pct": 0.0,
+          "memory_mb": 12288,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 4583,
+          "name": "snapfuse",
+          "cpu_pct": 0.0,
+          "memory_mb": 12424,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 307,
+          "name": "wsl-pro-service",
+          "cpu_pct": 0.0,
+          "memory_mb": 13944,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31834,
+          "name": "libuv-worker",
+          "cpu_pct": 0.0,
+          "memory_mb": 70300,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 7587,
+          "name": "fuse mainloop",
+          "cpu_pct": 0.0,
+          "memory_mb": 7040,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 301,
+          "name": "unattended-upgr",
+          "cpu_pct": 0.0,
+          "memory_mb": 22016,
+          "status": "Sleeping"
+        }
+      ]
+    },
+    {
+      "timestamp": 1761261214490,
+      "hostname": "Musta",
+      "uptime_seconds": 28923,
+      "cpu_usage_pct": 2.290076494216919,
+      "load_avg_one": 0.2,
+      "load_avg_five": 0.31,
+      "load_avg_fifteen": 0.35,
+      "mem_used_mb": 1911108,
+      "mem_total_mb": 16225468,
+      "mem_available_mb": 14314360,
+      "disks": [
+        {
+          "name": "/dev/sdf",
+          "mount_point": "/",
+          "filesystem": "ext4",
+          "total_gb": 1006.853931427002,
+          "used_gb": 67.90634536743164,
+          "used_pct": 6.744408821167217
+        },
+        {
+          "name": "C:\\134",
+          "mount_point": "/mnt/c",
+          "filesystem": "9p",
+          "total_gb": 231.8925743103027,
+          "used_gb": 159.2637710571289,
+          "used_pct": 68.67997887850133
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.889045715332031,
+          "used_pct": 2.8217644561478945
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.889045715332031,
+          "used_pct": 2.8217644561478945
+        }
+      ],
+      "network": [
+        {
+          "name": "lo",
+          "received_total_bytes": 300215307,
+          "transmitted_total_bytes": 300215307,
+          "received_kbps": 563.5046875,
+          "transmitted_kbps": 563.5046875
+        },
+        {
+          "name": "eth0",
+          "received_total_bytes": 618704630,
+          "transmitted_total_bytes": 157137131,
+          "received_kbps": 213.51875,
+          "transmitted_kbps": 298.078125
+        }
+      ],
+      "top_processes": [
+        {
+          "pid": 24336,
+          "name": "agent",
+          "cpu_pct": 9.16030502319336,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24357,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.58015251159668,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 32262,
+          "name": "codex",
+          "cpu_pct": 4.58015251159668,
+          "memory_mb": 29364,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 32266,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.58015251159668,
+          "memory_mb": 29364,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31852,
+          "name": "libuv-worker",
+          "cpu_pct": 4.58015251159668,
+          "memory_mb": 157276,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 7568,
+          "name": "gdbus",
+          "cpu_pct": 0.0,
+          "memory_mb": 7040,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31963,
+          "name": "Relay(31968)",
+          "cpu_pct": 0.0,
+          "memory_mb": 1168,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 130,
+          "name": "snapfuse",
+          "cpu_pct": 0.0,
+          "memory_mb": 1412,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 13289,
+          "name": "docker-desktop-",
+          "cpu_pct": 0.0,
+          "memory_mb": 23820,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 419,
+          "name": "sh",
+          "cpu_pct": 0.0,
+          "memory_mb": 1536,
+          "status": "Sleeping"
+        }
+      ]
+    },
+    {
+      "timestamp": 1761261219734,
+      "hostname": "Musta",
+      "uptime_seconds": 28928,
+      "cpu_usage_pct": 2.962962865829468,
+      "load_avg_one": 0.17,
+      "load_avg_five": 0.3,
+      "load_avg_fifteen": 0.34,
+      "mem_used_mb": 1914220,
+      "mem_total_mb": 16225468,
+      "mem_available_mb": 14311248,
+      "disks": [
+        {
+          "name": "/dev/sdf",
+          "mount_point": "/",
+          "filesystem": "ext4",
+          "total_gb": 1006.853931427002,
+          "used_gb": 67.90635299682617,
+          "used_pct": 6.744409578913131
+        },
+        {
+          "name": "C:\\134",
+          "mount_point": "/mnt/c",
+          "filesystem": "9p",
+          "total_gb": 231.8925743103027,
+          "used_gb": 159.2637710571289,
+          "used_pct": 68.67997887850133
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.889045715332031,
+          "used_pct": 2.8217644561478945
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.889045715332031,
+          "used_pct": 2.8217644561478945
+        }
+      ],
+      "network": [
+        {
+          "name": "eth0",
+          "received_total_bytes": 618773466,
+          "transmitted_total_bytes": 157324064,
+          "received_kbps": 107.55625,
+          "transmitted_kbps": 292.0828125
+        },
+        {
+          "name": "lo",
+          "received_total_bytes": 300576594,
+          "transmitted_total_bytes": 300576594,
+          "received_kbps": 564.5109375,
+          "transmitted_kbps": 564.5109375
+        }
+      ],
+      "top_processes": [
+        {
+          "pid": 31839,
+          "name": "webpack",
+          "cpu_pct": 4.44444465637207,
+          "memory_mb": 157276,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24336,
+          "name": "agent",
+          "cpu_pct": 4.44444465637207,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 318,
+          "name": "gmain",
+          "cpu_pct": 0.0,
+          "memory_mb": 22016,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 978,
+          "name": "docker-desktop-",
+          "cpu_pct": 0.0,
+          "memory_mb": 23820,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 291,
+          "name": "snapfuse",
+          "cpu_pct": 0.0,
+          "memory_mb": 11936,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 981,
+          "name": "docker-desktop-",
+          "cpu_pct": 0.0,
+          "memory_mb": 23820,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 4585,
+          "name": "snapd",
+          "cpu_pct": 0.0,
+          "memory_mb": 40376,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 970,
+          "name": "docker-desktop-",
+          "cpu_pct": 0.0,
+          "memory_mb": 23820,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31968,
+          "name": "bash",
+          "cpu_pct": 0.0,
+          "memory_mb": 9600,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24350,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 0.0,
+          "memory_mb": 23088,
+          "status": "Running"
+        }
+      ]
+    },
+    {
+      "timestamp": 1761261224970,
+      "hostname": "Musta",
+      "uptime_seconds": 28933,
+      "cpu_usage_pct": 1.5267175436019895,
+      "load_avg_one": 0.15,
+      "load_avg_five": 0.29,
+      "load_avg_fifteen": 0.34,
+      "mem_used_mb": 1912512,
+      "mem_total_mb": 16225468,
+      "mem_available_mb": 14312956,
+      "disks": [
+        {
+          "name": "/dev/sdf",
+          "mount_point": "/",
+          "filesystem": "ext4",
+          "total_gb": 1006.853931427002,
+          "used_gb": 67.90635299682617,
+          "used_pct": 6.744409578913131
+        },
+        {
+          "name": "C:\\134",
+          "mount_point": "/mnt/c",
+          "filesystem": "9p",
+          "total_gb": 231.8925743103027,
+          "used_gb": 159.26472091674805,
+          "used_pct": 68.68038849041838
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.889045715332031,
+          "used_pct": 2.8217644561478945
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.889045715332031,
+          "used_pct": 2.8217644561478945
+        }
+      ],
+      "network": [
+        {
+          "name": "eth0",
+          "received_total_bytes": 618774712,
+          "transmitted_total_bytes": 157324172,
+          "received_kbps": 1.946875,
+          "transmitted_kbps": 0.16875
+        },
+        {
+          "name": "lo",
+          "received_total_bytes": 301289036,
+          "transmitted_total_bytes": 301289036,
+          "received_kbps": 1113.190625,
+          "transmitted_kbps": 1113.190625
+        }
+      ],
+      "top_processes": [
+        {
+          "pid": 24352,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.58015251159668,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 24336,
+          "name": "agent",
+          "cpu_pct": 4.58015251159668,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31877,
+          "name": "V8Worker",
+          "cpu_pct": 0.0,
+          "memory_mb": 439500,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24357,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 0.0,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 31871,
+          "name": "V8Worker",
+          "cpu_pct": 0.0,
+          "memory_mb": 107800,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 7230,
+          "name": "at-spi-bus-laun",
+          "cpu_pct": 0.0,
+          "memory_mb": 7424,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 469,
+          "name": "(sd-pam)",
+          "cpu_pct": 0.0,
+          "memory_mb": 3512,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 1130,
+          "name": "docker-desktop-",
+          "cpu_pct": 0.0,
+          "memory_mb": 23820,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 32258,
+          "name": "V8Worker",
+          "cpu_pct": 0.0,
+          "memory_mb": 51328,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31853,
+          "name": "libuv-worker",
+          "cpu_pct": 0.0,
+          "memory_mb": 157276,
+          "status": "Sleeping"
+        }
+      ]
+    },
+    {
+      "timestamp": 1761261230210,
+      "hostname": "Musta",
+      "uptime_seconds": 28938,
+      "cpu_usage_pct": 2.62172269821167,
+      "load_avg_one": 0.22,
+      "load_avg_five": 0.3,
+      "load_avg_fifteen": 0.35,
+      "mem_used_mb": 1914272,
+      "mem_total_mb": 16225468,
+      "mem_available_mb": 14311196,
+      "disks": [
+        {
+          "name": "/dev/sdf",
+          "mount_point": "/",
+          "filesystem": "ext4",
+          "total_gb": 1006.853931427002,
+          "used_gb": 67.90635299682617,
+          "used_pct": 6.744409578913131
+        },
+        {
+          "name": "C:\\134",
+          "mount_point": "/mnt/c",
+          "filesystem": "9p",
+          "total_gb": 231.8925743103027,
+          "used_gb": 159.26472091674805,
+          "used_pct": 68.68038849041838
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.889049530029297,
+          "used_pct": 2.8217660186541687
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.889049530029297,
+          "used_pct": 2.8217660186541687
+        }
+      ],
+      "network": [
+        {
+          "name": "eth0",
+          "received_total_bytes": 618774712,
+          "transmitted_total_bytes": 157324172,
+          "received_kbps": 0.0,
+          "transmitted_kbps": 0.0
+        },
+        {
+          "name": "lo",
+          "received_total_bytes": 302001756,
+          "transmitted_total_bytes": 302001756,
+          "received_kbps": 1113.625,
+          "transmitted_kbps": 1113.625
+        }
+      ],
+      "top_processes": [
+        {
+          "pid": 24351,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.494381904602051,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 24336,
+          "name": "agent",
+          "cpu_pct": 4.494381904602051,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 32262,
+          "name": "codex",
+          "cpu_pct": 0.0,
+          "memory_mb": 29476,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24342,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 0.0,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 979,
+          "name": "docker-desktop-",
+          "cpu_pct": 0.0,
+          "memory_mb": 23820,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 108,
+          "name": "snapfuse",
+          "cpu_pct": 0.0,
+          "memory_mb": 1540,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 32272,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 0.0,
+          "memory_mb": 29476,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 422,
+          "name": "login",
+          "cpu_pct": 0.0,
+          "memory_mb": 4096,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31754,
+          "name": "docker-compose",
+          "cpu_pct": 0.0,
+          "memory_mb": 52940,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 121,
+          "name": "snapfuse",
+          "cpu_pct": 0.0,
+          "memory_mb": 1540,
+          "status": "Sleeping"
+        }
+      ]
+    },
+    {
+      "timestamp": 1761261235446,
+      "hostname": "Musta",
+      "uptime_seconds": 28944,
+      "cpu_usage_pct": 2.290076494216919,
+      "load_avg_one": 0.2,
+      "load_avg_five": 0.3,
+      "load_avg_fifteen": 0.34,
+      "mem_used_mb": 1912844,
+      "mem_total_mb": 16225468,
+      "mem_available_mb": 14312624,
+      "disks": [
+        {
+          "name": "/dev/sdf",
+          "mount_point": "/",
+          "filesystem": "ext4",
+          "total_gb": 1006.853931427002,
+          "used_gb": 67.90635681152344,
+          "used_pct": 6.744409957786089
+        },
+        {
+          "name": "C:\\134",
+          "mount_point": "/mnt/c",
+          "filesystem": "9p",
+          "total_gb": 231.8925743103027,
+          "used_gb": 159.26472091674805,
+          "used_pct": 68.68038849041838
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.8891143798828125,
+          "used_pct": 2.821792581260834
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.8891143798828125,
+          "used_pct": 2.821792581260834
+        }
+      ],
+      "network": [
+        {
+          "name": "lo",
+          "received_total_bytes": 302362287,
+          "transmitted_total_bytes": 302362287,
+          "received_kbps": 563.3296875,
+          "transmitted_kbps": 563.3296875
+        },
+        {
+          "name": "eth0",
+          "received_total_bytes": 618853274,
+          "transmitted_total_bytes": 157517467,
+          "received_kbps": 122.753125,
+          "transmitted_kbps": 302.0234375
+        }
+      ],
+      "top_processes": [
+        {
+          "pid": 24336,
+          "name": "agent",
+          "cpu_pct": 13.74045753479004,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31839,
+          "name": "webpack",
+          "cpu_pct": 4.58015251159668,
+          "memory_mb": 157276,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31854,
+          "name": "libuv-worker",
+          "cpu_pct": 4.58015251159668,
+          "memory_mb": 157276,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24350,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.58015251159668,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 279,
+          "name": "rsyslogd",
+          "cpu_pct": 0.0,
+          "memory_mb": 5376,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 134,
+          "name": "snapfuse",
+          "cpu_pct": 0.0,
+          "memory_mb": 1408,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 32260,
+          "name": "V8Worker",
+          "cpu_pct": 0.0,
+          "memory_mb": 51328,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31962,
+          "name": "SessionLeader",
+          "cpu_pct": 0.0,
+          "memory_mb": 1032,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31851,
+          "name": "libuv-worker",
+          "cpu_pct": 0.0,
+          "memory_mb": 157276,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 4583,
+          "name": "snapfuse",
+          "cpu_pct": 0.0,
+          "memory_mb": 12424,
+          "status": "Sleeping"
+        }
+      ]
+    },
+    {
+      "timestamp": 1761261240688,
+      "hostname": "Musta",
+      "uptime_seconds": 28949,
+      "cpu_usage_pct": 2.973977565765381,
+      "load_avg_one": 0.19,
+      "load_avg_five": 0.29,
+      "load_avg_fifteen": 0.34,
+      "mem_used_mb": 1914404,
+      "mem_total_mb": 16225468,
+      "mem_available_mb": 14311064,
+      "disks": [
+        {
+          "name": "/dev/sdf",
+          "mount_point": "/",
+          "filesystem": "ext4",
+          "total_gb": 1006.853931427002,
+          "used_gb": 67.90635681152344,
+          "used_pct": 6.744409957786089
+        },
+        {
+          "name": "C:\\134",
+          "mount_point": "/mnt/c",
+          "filesystem": "9p",
+          "total_gb": 231.8925743103027,
+          "used_gb": 159.26480102539062,
+          "used_pct": 68.68042303600174
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.8891143798828125,
+          "used_pct": 2.821792581260834
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.8891143798828125,
+          "used_pct": 2.821792581260834
+        }
+      ],
+      "network": [
+        {
+          "name": "eth0",
+          "received_total_bytes": 618853274,
+          "transmitted_total_bytes": 157517467,
+          "received_kbps": 0.0,
+          "transmitted_kbps": 0.0
+        },
+        {
+          "name": "lo",
+          "received_total_bytes": 302723141,
+          "transmitted_total_bytes": 302723141,
+          "received_kbps": 563.834375,
+          "transmitted_kbps": 563.834375
+        }
+      ],
+      "top_processes": [
+        {
+          "pid": 24336,
+          "name": "agent",
+          "cpu_pct": 4.46096658706665,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 32262,
+          "name": "codex",
+          "cpu_pct": 4.46096658706665,
+          "memory_mb": 29560,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 32263,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.46096658706665,
+          "memory_mb": 29560,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24361,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.46096658706665,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 24350,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.46096658706665,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 32261,
+          "name": "SignalInspector",
+          "cpu_pct": 0.0,
+          "memory_mb": 51328,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24355,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 0.0,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 418,
+          "name": "Relay(419)",
+          "cpu_pct": 0.0,
+          "memory_mb": 1028,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24359,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 0.0,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 127,
+          "name": "snapfuse",
+          "cpu_pct": 0.0,
+          "memory_mb": 1412,
+          "status": "Sleeping"
+        }
+      ]
+    },
+    {
+      "timestamp": 1761261245928,
+      "hostname": "Musta",
+      "uptime_seconds": 28954,
+      "cpu_usage_pct": 2.985074520111084,
+      "load_avg_one": 0.17,
+      "load_avg_five": 0.29,
+      "load_avg_fifteen": 0.34,
+      "mem_used_mb": 1911708,
+      "mem_total_mb": 16225468,
+      "mem_available_mb": 14313760,
+      "disks": [
+        {
+          "name": "/dev/sdf",
+          "mount_point": "/",
+          "filesystem": "ext4",
+          "total_gb": 1006.853931427002,
+          "used_gb": 67.90635681152344,
+          "used_pct": 6.744409957786089
+        },
+        {
+          "name": "C:\\134",
+          "mount_point": "/mnt/c",
+          "filesystem": "9p",
+          "total_gb": 231.8925743103027,
+          "used_gb": 159.26480102539062,
+          "used_pct": 68.68042303600174
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.8891143798828125,
+          "used_pct": 2.821792581260834
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.8891143798828125,
+          "used_pct": 2.821792581260834
+        }
+      ],
+      "network": [
+        {
+          "name": "lo",
+          "received_total_bytes": 303084286,
+          "transmitted_total_bytes": 303084286,
+          "received_kbps": 564.2890625,
+          "transmitted_kbps": 564.2890625
+        },
+        {
+          "name": "eth0",
+          "received_total_bytes": 618853274,
+          "transmitted_total_bytes": 157517467,
+          "received_kbps": 0.0,
+          "transmitted_kbps": 0.0
+        }
+      ],
+      "top_processes": [
+        {
+          "pid": 24336,
+          "name": "agent",
+          "cpu_pct": 8.95522403717041,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24353,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.477612018585205,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 24352,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.477612018585205,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 24356,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 0.0,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 7559,
+          "name": "xdg-document-po",
+          "cpu_pct": 0.0,
+          "memory_mb": 7040,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 4627,
+          "name": "snapd",
+          "cpu_pct": 0.0,
+          "memory_mb": 40376,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31872,
+          "name": "V8Worker",
+          "cpu_pct": 0.0,
+          "memory_mb": 107800,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 7231,
+          "name": "pool-spawner",
+          "cpu_pct": 0.0,
+          "memory_mb": 7424,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24341,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 0.0,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 7569,
+          "name": "xdg-permission-",
+          "cpu_pct": 0.0,
+          "memory_mb": 5888,
+          "status": "Sleeping"
+        }
+      ]
+    },
+    {
+      "timestamp": 1761261251166,
+      "hostname": "Musta",
+      "uptime_seconds": 28959,
+      "cpu_usage_pct": 2.641509532928467,
+      "load_avg_one": 0.48,
+      "load_avg_five": 0.35,
+      "load_avg_fifteen": 0.36,
+      "mem_used_mb": 1914460,
+      "mem_total_mb": 16225468,
+      "mem_available_mb": 14311008,
+      "disks": [
+        {
+          "name": "/dev/sdf",
+          "mount_point": "/",
+          "filesystem": "ext4",
+          "total_gb": 1006.853931427002,
+          "used_gb": 67.90636444091797,
+          "used_pct": 6.744410715532004
+        },
+        {
+          "name": "C:\\134",
+          "mount_point": "/mnt/c",
+          "filesystem": "9p",
+          "total_gb": 231.8925743103027,
+          "used_gb": 159.26480102539062,
+          "used_pct": 68.68042303600174
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.889118194580078,
+          "used_pct": 2.821794143767109
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.889118194580078,
+          "used_pct": 2.821794143767109
+        }
+      ],
+      "network": [
+        {
+          "name": "eth0",
+          "received_total_bytes": 618927854,
+          "transmitted_total_bytes": 157715832,
+          "received_kbps": 116.53125,
+          "transmitted_kbps": 309.9453125
+        },
+        {
+          "name": "lo",
+          "received_total_bytes": 303445390,
+          "transmitted_total_bytes": 303445390,
+          "received_kbps": 564.225,
+          "transmitted_kbps": 564.225
+        }
+      ],
+      "top_processes": [
+        {
+          "pid": 32262,
+          "name": "codex",
+          "cpu_pct": 4.52830171585083,
+          "memory_mb": 29548,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24336,
+          "name": "agent",
+          "cpu_pct": 4.52830171585083,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24352,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.52830171585083,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 31917,
+          "name": "docker-compose",
+          "cpu_pct": 0.0,
+          "memory_mb": 52940,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31854,
+          "name": "libuv-worker",
+          "cpu_pct": 0.0,
+          "memory_mb": 157276,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 32266,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 0.0,
+          "memory_mb": 29548,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31829,
+          "name": "V8Worker",
+          "cpu_pct": 0.0,
+          "memory_mb": 70300,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 1897,
+          "name": "polkitd",
+          "cpu_pct": 0.0,
+          "memory_mb": 7680,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 981,
+          "name": "docker-desktop-",
+          "cpu_pct": 0.0,
+          "memory_mb": 23820,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 7632,
+          "name": "gmain",
+          "cpu_pct": 0.0,
+          "memory_mb": 7424,
+          "status": "Sleeping"
+        }
+      ]
+    },
+    {
+      "timestamp": 1761261256405,
+      "hostname": "Musta",
+      "uptime_seconds": 28964,
+      "cpu_usage_pct": 2.985074520111084,
+      "load_avg_one": 0.44,
+      "load_avg_five": 0.34,
+      "load_avg_fifteen": 0.36,
+      "mem_used_mb": 1915336,
+      "mem_total_mb": 16225468,
+      "mem_available_mb": 14310132,
+      "disks": [
+        {
+          "name": "/dev/sdf",
+          "mount_point": "/",
+          "filesystem": "ext4",
+          "total_gb": 1006.853931427002,
+          "used_gb": 67.90636444091797,
+          "used_pct": 6.744410715532004
+        },
+        {
+          "name": "C:\\134",
+          "mount_point": "/mnt/c",
+          "filesystem": "9p",
+          "total_gb": 231.8925743103027,
+          "used_gb": 159.26480102539062,
+          "used_pct": 68.68042303600174
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.889118194580078,
+          "used_pct": 2.821794143767109
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.889118194580078,
+          "used_pct": 2.821794143767109
+        }
+      ],
+      "network": [
+        {
+          "name": "lo",
+          "received_total_bytes": 303806548,
+          "transmitted_total_bytes": 303806548,
+          "received_kbps": 564.309375,
+          "transmitted_kbps": 564.309375
+        },
+        {
+          "name": "eth0",
+          "received_total_bytes": 618929058,
+          "transmitted_total_bytes": 157715898,
+          "received_kbps": 1.88125,
+          "transmitted_kbps": 0.103125
+        }
+      ],
+      "top_processes": [
+        {
+          "pid": 24336,
+          "name": "agent",
+          "cpu_pct": 8.95522403717041,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24351,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.477612018585205,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 24353,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.477612018585205,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 24350,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.477612018585205,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 31834,
+          "name": "libuv-worker",
+          "cpu_pct": 0.0,
+          "memory_mb": 70300,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 418,
+          "name": "Relay(419)",
+          "cpu_pct": 0.0,
+          "memory_mb": 1028,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24354,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 0.0,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 975,
+          "name": "docker-desktop-",
+          "cpu_pct": 0.0,
+          "memory_mb": 23820,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24344,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 0.0,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 7231,
+          "name": "pool-spawner",
+          "cpu_pct": 0.0,
+          "memory_mb": 7424,
+          "status": "Sleeping"
+        }
+      ]
+    },
+    {
+      "timestamp": 1761261261648,
+      "hostname": "Musta",
+      "uptime_seconds": 28970,
+      "cpu_usage_pct": 2.973977565765381,
+      "load_avg_one": 0.4,
+      "load_avg_five": 0.34,
+      "load_avg_fifteen": 0.36,
+      "mem_used_mb": 1916096,
+      "mem_total_mb": 16225468,
+      "mem_available_mb": 14309372,
+      "disks": [
+        {
+          "name": "/dev/sdf",
+          "mount_point": "/",
+          "filesystem": "ext4",
+          "total_gb": 1006.853931427002,
+          "used_gb": 67.90636444091797,
+          "used_pct": 6.744410715532004
+        },
+        {
+          "name": "C:\\134",
+          "mount_point": "/mnt/c",
+          "filesystem": "9p",
+          "total_gb": 231.8925743103027,
+          "used_gb": 159.26480102539062,
+          "used_pct": 68.68042303600174
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.889118194580078,
+          "used_pct": 2.821794143767109
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.889118194580078,
+          "used_pct": 2.821794143767109
+        }
+      ],
+      "network": [
+        {
+          "name": "lo",
+          "received_total_bytes": 304520901,
+          "transmitted_total_bytes": 304520901,
+          "received_kbps": 1116.1765625,
+          "transmitted_kbps": 1116.1765625
+        },
+        {
+          "name": "eth0",
+          "received_total_bytes": 618929058,
+          "transmitted_total_bytes": 157715898,
+          "received_kbps": 0.0,
+          "transmitted_kbps": 0.0
+        }
+      ],
+      "top_processes": [
+        {
+          "pid": 24336,
+          "name": "agent",
+          "cpu_pct": 8.9219331741333,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24354,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.46096658706665,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 24360,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.46096658706665,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 4583,
+          "name": "snapfuse",
+          "cpu_pct": 0.0,
+          "memory_mb": 12424,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24350,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 0.0,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 972,
+          "name": "docker-desktop-",
+          "cpu_pct": 0.0,
+          "memory_mb": 23820,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31870,
+          "name": "V8Worker",
+          "cpu_pct": 0.0,
+          "memory_mb": 107800,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 4590,
+          "name": "snapd",
+          "cpu_pct": 0.0,
+          "memory_mb": 40504,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 7569,
+          "name": "xdg-permission-",
+          "cpu_pct": 0.0,
+          "memory_mb": 5888,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 19998,
+          "name": "Relay(19999)",
+          "cpu_pct": 0.0,
+          "memory_mb": 1040,
+          "status": "Sleeping"
+        }
+      ]
+    },
+    {
+      "timestamp": 1761261266883,
+      "hostname": "Musta",
+      "uptime_seconds": 28975,
+      "cpu_usage_pct": 2.67175555229187,
+      "load_avg_one": 0.37,
+      "load_avg_five": 0.33,
+      "load_avg_fifteen": 0.35,
+      "mem_used_mb": 1919488,
+      "mem_total_mb": 16225468,
+      "mem_available_mb": 14305980,
+      "disks": [
+        {
+          "name": "/dev/sdf",
+          "mount_point": "/",
+          "filesystem": "ext4",
+          "total_gb": 1006.853931427002,
+          "used_gb": 67.90637588500977,
+          "used_pct": 6.744411852150875
+        },
+        {
+          "name": "C:\\134",
+          "mount_point": "/mnt/c",
+          "filesystem": "9p",
+          "total_gb": 231.8925743103027,
+          "used_gb": 159.26480865478516,
+          "used_pct": 68.68042632605732
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.889118194580078,
+          "used_pct": 2.821794143767109
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.889118194580078,
+          "used_pct": 2.821794143767109
+        }
+      ],
+      "network": [
+        {
+          "name": "lo",
+          "received_total_bytes": 305234859,
+          "transmitted_total_bytes": 305234859,
+          "received_kbps": 1115.559375,
+          "transmitted_kbps": 1115.559375
+        },
+        {
+          "name": "eth0",
+          "received_total_bytes": 619005035,
+          "transmitted_total_bytes": 157921900,
+          "received_kbps": 118.7140625,
+          "transmitted_kbps": 321.878125
+        }
+      ],
+      "top_processes": [
+        {
+          "pid": 24336,
+          "name": "agent",
+          "cpu_pct": 9.16030502319336,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 32262,
+          "name": "codex",
+          "cpu_pct": 4.58015251159668,
+          "memory_mb": 29728,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24354,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.58015251159668,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 24350,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.58015251159668,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 32268,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 0.0,
+          "memory_mb": 29728,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 33316,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 0.0,
+          "memory_mb": 29728,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 422,
+          "name": "login",
+          "cpu_pct": 0.0,
+          "memory_mb": 4096,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 7632,
+          "name": "gmain",
+          "cpu_pct": 0.0,
+          "memory_mb": 7424,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31727,
+          "name": "docker",
+          "cpu_pct": 0.0,
+          "memory_mb": 23640,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 110,
+          "name": "snapfuse",
+          "cpu_pct": 0.0,
+          "memory_mb": 1412,
+          "status": "Sleeping"
+        }
+      ]
+    },
+    {
+      "timestamp": 1761261272123,
+      "hostname": "Musta",
+      "uptime_seconds": 28980,
+      "cpu_usage_pct": 2.6315789222717285,
+      "load_avg_one": 0.34,
+      "load_avg_five": 0.33,
+      "load_avg_fifteen": 0.35,
+      "mem_used_mb": 1910216,
+      "mem_total_mb": 16225468,
+      "mem_available_mb": 14315252,
+      "disks": [
+        {
+          "name": "/dev/sdf",
+          "mount_point": "/",
+          "filesystem": "ext4",
+          "total_gb": 1006.853931427002,
+          "used_gb": 67.90637588500977,
+          "used_pct": 6.744411852150875
+        },
+        {
+          "name": "C:\\134",
+          "mount_point": "/mnt/c",
+          "filesystem": "9p",
+          "total_gb": 231.8925743103027,
+          "used_gb": 159.26480865478516,
+          "used_pct": 68.68042632605732
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.889122009277344,
+          "used_pct": 2.821795706273383
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.889122009277344,
+          "used_pct": 2.821795706273383
+        }
+      ],
+      "network": [
+        {
+          "name": "eth0",
+          "received_total_bytes": 619006281,
+          "transmitted_total_bytes": 157922008,
+          "received_kbps": 1.946875,
+          "transmitted_kbps": 0.16875
+        },
+        {
+          "name": "lo",
+          "received_total_bytes": 305948936,
+          "transmitted_total_bytes": 305948936,
+          "received_kbps": 1115.7453125,
+          "transmitted_kbps": 1115.7453125
+        }
+      ],
+      "top_processes": [
+        {
+          "pid": 24336,
+          "name": "agent",
+          "cpu_pct": 9.022557258605955,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 13289,
+          "name": "docker-desktop-",
+          "cpu_pct": 0.0,
+          "memory_mb": 23820,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 7569,
+          "name": "xdg-permission-",
+          "cpu_pct": 0.0,
+          "memory_mb": 5888,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 976,
+          "name": "docker-desktop-",
+          "cpu_pct": 0.0,
+          "memory_mb": 23820,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31748,
+          "name": "docker-compose",
+          "cpu_pct": 0.0,
+          "memory_mb": 53068,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 142,
+          "name": "snapfuse",
+          "cpu_pct": 0.0,
+          "memory_mb": 1540,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24355,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 0.0,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 4737,
+          "name": "snapd",
+          "cpu_pct": 0.0,
+          "memory_mb": 40504,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24356,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 0.0,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 110,
+          "name": "snapfuse",
+          "cpu_pct": 0.0,
+          "memory_mb": 1412,
+          "status": "Sleeping"
+        }
+      ]
+    },
+    {
+      "timestamp": 1761261277366,
+      "hostname": "Musta",
+      "uptime_seconds": 28985,
+      "cpu_usage_pct": 2.9962546825408936,
+      "load_avg_one": 0.31,
+      "load_avg_five": 0.32,
+      "load_avg_fifteen": 0.35,
+      "mem_used_mb": 1912664,
+      "mem_total_mb": 16225468,
+      "mem_available_mb": 14312804,
+      "disks": [
+        {
+          "name": "/dev/sdf",
+          "mount_point": "/",
+          "filesystem": "ext4",
+          "total_gb": 1006.853931427002,
+          "used_gb": 67.90637588500977,
+          "used_pct": 6.744411852150875
+        },
+        {
+          "name": "C:\\134",
+          "mount_point": "/mnt/c",
+          "filesystem": "9p",
+          "total_gb": 231.8925743103027,
+          "used_gb": 159.26480865478516,
+          "used_pct": 68.68042632605732
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.889122009277344,
+          "used_pct": 2.821795706273383
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.1396446228027,
+          "used_gb": 6.889122009277344,
+          "used_pct": 2.821795706273383
+        }
+      ],
+      "network": [
+        {
+          "name": "eth0",
+          "received_total_bytes": 619006281,
+          "transmitted_total_bytes": 157922008,
+          "received_kbps": 0.0,
+          "transmitted_kbps": 0.0
+        },
+        {
+          "name": "lo",
+          "received_total_bytes": 305952304,
+          "transmitted_total_bytes": 305952304,
+          "received_kbps": 5.2625,
+          "transmitted_kbps": 5.2625
+        }
+      ],
+      "top_processes": [
+        {
+          "pid": 24336,
+          "name": "agent",
+          "cpu_pct": 13.483145713806152,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 32262,
+          "name": "codex",
+          "cpu_pct": 4.494381904602051,
+          "memory_mb": 29728,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31839,
+          "name": "webpack",
+          "cpu_pct": 4.494381904602051,
+          "memory_mb": 157276,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24350,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.494381904602051,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 4586,
+          "name": "snapd",
+          "cpu_pct": 0.0,
+          "memory_mb": 40504,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 313,
+          "name": "wsl-pro-service",
+          "cpu_pct": 0.0,
+          "memory_mb": 13944,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 826,
+          "name": "(sd-pam)",
+          "cpu_pct": 0.0,
+          "memory_mb": 3380,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31876,
+          "name": "V8Worker",
+          "cpu_pct": 0.0,
+          "memory_mb": 439500,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 7586,
+          "name": "fuse mainloop",
+          "cpu_pct": 0.0,
+          "memory_mb": 7040,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31755,
+          "name": "docker-compose",
+          "cpu_pct": 0.0,
+          "memory_mb": 53068,
+          "status": "Sleeping"
+        }
+      ]
+    },
+    {
+      "timestamp": 1761261282608,
+      "hostname": "Musta",
+      "uptime_seconds": 28991,
+      "cpu_usage_pct": 1.520912528038025,
+      "load_avg_one": 0.29,
+      "load_avg_five": 0.32,
+      "load_avg_fifteen": 0.35,
+      "mem_used_mb": 1906156,
+      "mem_total_mb": 16225468,
+      "mem_available_mb": 14319312,
+      "disks": [
+        {
+          "name": "/dev/sdf",
+          "mount_point": "/",
+          "filesystem": "ext4",
+          "total_gb": 1006.853931427002,
+          "used_gb": 67.90637588500977,
+          "used_pct": 6.744411852150875
+        },
+        {
+          "name": "C:\\134",
+          "mount_point": "/mnt/c",
+          "filesystem": "9p",
+          "total_gb": 231.89257431030273,
+          "used_gb": 159.26480865478516,
+          "used_pct": 68.68042632605732
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.13964462280273,
+          "used_gb": 6.889122009277344,
+          "used_pct": 2.821795706273383
+        },
+        {
+          "name": "D:\\134",
+          "mount_point": "/mnt/d",
+          "filesystem": "9p",
+          "total_gb": 244.13964462280273,
+          "used_gb": 6.889122009277344,
+          "used_pct": 2.821795706273383
+        }
+      ],
+      "network": [
+        {
+          "name": "eth0",
+          "received_total_bytes": 619006371,
+          "transmitted_total_bytes": 157922098,
+          "received_kbps": 0.140625,
+          "transmitted_kbps": 0.140625
+        },
+        {
+          "name": "lo",
+          "received_total_bytes": 306313356,
+          "transmitted_total_bytes": 306313356,
+          "received_kbps": 564.14375,
+          "transmitted_kbps": 564.14375
+        }
+      ],
+      "top_processes": [
+        {
+          "pid": 24351,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.562737941741943,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 24353,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 4.562737941741943,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 24336,
+          "name": "agent",
+          "cpu_pct": 4.562737941741943,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 7006,
+          "name": "dbus-daemon",
+          "cpu_pct": 0.0,
+          "memory_mb": 4864,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 32262,
+          "name": "codex",
+          "cpu_pct": 0.0,
+          "memory_mb": 29728,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24345,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 0.0,
+          "memory_mb": 23088,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 24350,
+          "name": "tokio-runtime-w",
+          "cpu_pct": 0.0,
+          "memory_mb": 23088,
+          "status": "Running"
+        },
+        {
+          "pid": 309,
+          "name": "snapfuse",
+          "cpu_pct": 0.0,
+          "memory_mb": 11936,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31877,
+          "name": "V8Worker",
+          "cpu_pct": 0.0,
+          "memory_mb": 439500,
+          "status": "Sleeping"
+        },
+        {
+          "pid": 31730,
+          "name": "docker",
+          "cpu_pct": 0.0,
+          "memory_mb": 23640,
+          "status": "Sleeping"
+        }
+      ]
+    }
+  ]
+}
