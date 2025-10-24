@@ -35,7 +35,7 @@ impl Config {
             .unwrap_or_else(|_| PathBuf::from("data/snapshots"));
 
         let collection_interval =
-            env::var("COLLECTION_INTERVAL_SECS").unwrap_or_else(|_| "5".to_string());
+            env::var("COLLECTION_INTERVAL_SECS").unwrap_or_else(|_| "1".to_string());
         let collection_interval_secs: f64 = collection_interval
             .parse()
             .map_err(|_| ConfigError::InvalidInterval(collection_interval.clone()))?;
