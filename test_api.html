@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>API Test</title>
-</head>
-<body>
+  </head>
+  <body>
     <button onclick="testAPI()">Test API</button>
     <div id="result"></div>
 
     <script>
-    async function testAPI() {
+      async function testAPI() {
         try {
-            const response = await fetch('http://127.0.0.1:7000/api/system', {
-                headers: {
-                    'Authorization': 'Bearer supersecret123'
-                }
-            });
-            
-            if (response.ok) {
-                const data = await response.json();
-                document.getElementById('result').innerHTML = 
-                    '<pre>' + JSON.stringify(data, null, 2) + '</pre>';
-            } else {
-                document.getElementById('result').innerHTML = 
-                    'Error: ' + response.status + ' - ' + response.statusText;
+          const response = await fetch(
+            "http://host.docker.internal:7000/api/system",
+            {
+              headers: {
+                Authorization: "Bearer supersecret123",
+              },
             }
+          );
+
+          if (response.ok) {
+            const data = await response.json();
+            document.getElementById("result").innerHTML =
+              "<pre>" + JSON.stringify(data, null, 2) + "</pre>";
+          } else {
+            document.getElementById("result").innerHTML =
+              "Error: " + response.status + " - " + response.statusText;
+          }
         } catch (error) {
-            document.getElementById('result').innerHTML = 'Error: ' + error.message;
+          document.getElementById("result").innerHTML =
+            "Error: " + error.message;
         }
-    }
+      }
     </script>
-</body>
+  </body>
 </html>

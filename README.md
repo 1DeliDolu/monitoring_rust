@@ -73,7 +73,7 @@ npm run build
 
 ### API-Endpoints
 
-Der Agent läuft standardmäßig unter `http://127.0.0.1:7000`.
+Der Agent läuft standardmäßig unter `http://host.docker.internal:7000`.
 
 #### Aktueller Systemstatus
 
@@ -119,7 +119,7 @@ GET /ui
 
 1. **JSON API Datasource** Plugin installieren
 2. In den Datasource-Einstellungen:
-   - URL: `http://127.0.0.1:7000`
+   - URL: `http://host.docker.internal:7000`
    - Query-String: `api_key=...`
 3. Neues Panel erstellen und JSONPath verwenden:
    - Timestamp: `$.snapshots[*].timestamp`
@@ -154,13 +154,13 @@ API-Endpoints unterstützen zwei Arten der Authentifizierung:
 1. **Bearer Token** (Header):
 
 ```bash
-curl -H "Authorization: Bearer ..." http://127.0.0.1:7000/api/system
+curl -H "Authorization: Bearer ..." http://host.docker.internal:7000/api/system
 ```
 
 2. **Query-Parameter** (einfacher für Tests):
 
 ```bash
-curl "http://127.0.0.1:7000/api/system?api_key=..."
+curl "http://host.docker.internal:7000/api/system?api_key=..."
 ```
 
 Unterstützte Query-Parameter: `api_token`, `apitoken`, `token`, `key`
@@ -220,7 +220,7 @@ RUST_LOG=debug cargo run
 
 ```bash
 # Systemstatus prüfen
-curl "http://127.0.0.1:7000/api/system?api_key=..."
+curl "http://host.docker.internal:7000/api/system?api_key=..."
 
 # Snapshot-Anzahl prüfen
 python3 check_snapshots.py
