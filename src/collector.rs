@@ -1,4 +1,4 @@
-use std::{collections::HashMap, thread, time::Duration};
+use std::{collections::HashMap, process::Command, thread, time::Duration};
 
 use chrono::Utc;
 use nvml_wrapper::{enum_wrappers::device::TemperatureSensor, Nvml};
@@ -356,14 +356,26 @@ fn bytes_to_mb(value: u64) -> u64 {
 }
 
 fn collect_gpu_info() -> (Vec<GpuInfo>, Option<f64>, Option<f64>) {
+    if let Some(result) = collect_gpu_info_nvml() {
+        return result;
+    }
+
+    if let Some(result) = collect_gpu_info_nvidia_smi() {
+        return result;
+    }
+
+    (Vec::new(), None, None)
+}
+
+fn collect_gpu_info_nvml() -> Option<(Vec<GpuInfo>, Option<f64>, Option<f64>)> {
     let nvml = match Nvml::init() {
         Ok(nvml) => nvml,
-        Err(_) => return (Vec::new(), None, None),
+        Err(_) => return None,
     };
 
     let count = match nvml.device_count() {
         Ok(count) => count,
-        Err(_) => return (Vec::new(), None, None),
+        Err(_) => return None,
     };
 
     let mut details = Vec::new();
@@ -435,5 +447,89 @@ fn collect_gpu_info() -> (Vec<GpuInfo>, Option<f64>, Option<f64>) {
         None
     };
 
-    (details, average_usage_pct, average_mem_usage_pct)
+    Some((details, average_usage_pct, average_mem_usage_pct))
+}
+
+fn collect_gpu_info_nvidia_smi() -> Option<(Vec<GpuInfo>, Option<f64>, Option<f64>)> {
+    let output = Command::new("nvidia-smi")
+        .args([
+            "--query-gpu=index,name,utilization.gpu,utilization.memory,memory.total,memory.used,temperature.gpu",
+            "--format=csv,noheader,nounits",
+        ])
+        .output()
+        .ok()?;
+
+    if !output.status.success() {
+        return None;
+    }
+
+    let stdout = String::from_utf8(output.stdout).ok()?;
+    let mut details = Vec::new();
+    let mut usage_total = 0.0;
+    let mut usage_count = 0.0;
+    let mut mem_usage_total = 0.0;
+    let mut mem_usage_count = 0.0;
+
+    for line in stdout.lines() {
+        let trimmed = line.trim();
+        if trimmed.is_empty() {
+            continue;
+        }
+
+        let parts: Vec<&str> = trimmed.split(',').map(|s| s.trim()).collect();
+        if parts.len() < 7 {
+            continue;
+        }
+
+        let index = match parts[0].parse::<u32>() {
+            Ok(value) => value,
+            Err(_) => continue,
+        };
+
+        let name = parts[1].to_string();
+        let gpu_usage_pct = parts[2].parse::<f64>().ok();
+        let memory_usage_pct = parts[3].parse::<f64>().ok();
+        let memory_total_mb = parts[4].parse::<u64>().ok();
+        let memory_used_mb = parts[5].parse::<u64>().ok();
+        let temperature_celsius = parts[6].parse::<f64>().ok();
+
+        if let Some(value) = gpu_usage_pct {
+            usage_total += value;
+            usage_count += 1.0;
+        }
+        if let Some(value) = memory_usage_pct {
+            mem_usage_total += value;
+            mem_usage_count += 1.0;
+        }
+
+        let computed_memory_usage_pct = match (memory_total_mb, memory_used_mb) {
+            (Some(total), Some(used)) if total > 0 => Some((used as f64 / total as f64) * 100.0),
+            _ => memory_usage_pct,
+        };
+
+        details.push(GpuInfo {
+            index,
+            name,
+            uuid: None,
+            gpu_usage_pct,
+            memory_used_mb,
+            memory_total_mb,
+            memory_usage_pct: computed_memory_usage_pct,
+            temperature_celsius,
+        });
+    }
+
+    let average_usage_pct = if usage_count > 0.0 {
+        Some(usage_total / usage_count)
+    } else {
+        None
+    };
+
+    let average_mem_usage_pct = if mem_usage_count > 0.0 {
+        Some(mem_usage_total / mem_usage_count)
+    } else {
+        None
+    };
+
+    Some((details, average_usage_pct, average_mem_usage_pct))
 }
